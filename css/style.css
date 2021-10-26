@@ -5,6 +5,7 @@ body {
   display: grid;
   grid-template-areas: "header header" "main aside" "footer footer";
   grid-template-rows: auto 1fr auto;
+  grid-template-columns: 1fr 1fr;
 }
 
 header {
@@ -12,12 +13,15 @@ header {
 }
 main {
   grid-area: main;
+  padding: 2em;
 }
 aside {
   grid-area: aside;
+  padding: 2em;
 }
 footer {
   grid-area: footer;
+  padding: 1em;
 }
 
 main,
@@ -32,4 +36,49 @@ footer {
 
 .logo {
   max-width: 250px;
+  float: left;
+  padding: 2em;
+}
+
+header a {
+  color: #f2f2f2;
+  text-decoration: none;
+}
+
+header a:hover {
+  text-decoration: underline;
+  text-decoration-color: #b70d0d;
+}
+
+.social {
+  text-align: right;
+  padding-top: 2em;
+  padding-right: 2em;
+}
+
+header ul {
+  list-style: none;
+}
+
+header li {
+  display: inline;
+}
+
+nav {
+  text-align: right;
+  padding-top: 2.25em;
+  padding-right: 2em;
+  font-size: 1.25em;
+}
+
+nav a,
+.social a {
+  padding: 1.25em;
+}
+
+.active {
+  background-color: #848c5a;
+  border-radius: 25px;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
 }
