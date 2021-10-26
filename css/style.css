@@ -1,0 +1,35 @@
+body {
+  background: #262626;
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  grid-template-areas: "header header" "main aside" "footer footer";
+  grid-template-rows: auto 1fr auto;
+}
+
+header {
+  grid-area: header;
+}
+main {
+  grid-area: main;
+}
+aside {
+  grid-area: aside;
+}
+footer {
+  grid-area: footer;
+}
+
+main,
+aside {
+  background: #f2f2f2;
+}
+
+header,
+footer {
+  color: #f2f2f2;
+}
+
+.logo {
+  max-width: 250px;
+}
