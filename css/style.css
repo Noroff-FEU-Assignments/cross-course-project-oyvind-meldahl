@@ -160,6 +160,10 @@ nav a,
     justify-content: center;
   }
 
+  .logo {
+    padding: 0;
+  }
+
   .mobile-menu {
     display: flex;
     justify-content: center;
