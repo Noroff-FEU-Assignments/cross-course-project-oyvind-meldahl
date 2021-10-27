@@ -31,6 +31,17 @@ aside {
   background: #f2f2f2;
 }
 
+.homepage {
+  background: #262626;
+}
+
+.frontsplash {
+  width: 100%;
+  max-width: 750px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 header,
 footer {
   color: #f2f2f2;
@@ -81,6 +92,29 @@ nav a,
 .active {
   background-color: #848c5a;
   border-radius: 25px;
+}
+
+.homepage h1 {
+  font-size: 3em;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border-bottom: solid #b70d0d 2px;
+  border-bottom-width: 10;
+}
+
+.homepage h2 {
+  font-size: 2em;
+}
+
+.homepage p {
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+.homepage h1,
+h2,
+p {
+  color: #f2f2f2;
 }
 
 .copy {
@@ -150,5 +184,18 @@ nav a,
   .logo {
     padding: 2em 0em 2em 2em;
     max-width: 200px;
+  }
+
+  .homepage h1 {
+    padding-top: 0;
+    margin-bottom: 0;
+  }
+
+  .homepage {
+    text-align: center;
+  }
+
+  .frontsplash {
+    display: none;
   }
 }
