@@ -13,7 +13,7 @@ header {
 }
 
 .mobile-nav ul {
-  padding: 0px;
+  padding: 0;
 }
 
 .mobile-nav li {
@@ -45,12 +45,12 @@ header {
 
 @media (min-width: 600px) {
   .logo {
-    float: left;
+    float: right;
   }
 
   .mobile-nav {
     display: block;
-    float: right;
+    float: left;
   }
 
   .hamburger-label {
