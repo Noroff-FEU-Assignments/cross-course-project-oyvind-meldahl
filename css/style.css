@@ -93,10 +93,6 @@ nav a,
   padding-bottom: 0.5em;
 }
 
-.mobile-menu {
-  display: none;
-}
-
 .copy {
   display: flex;
   justify-content: center;
@@ -110,8 +106,9 @@ nav a,
 }
 
 .mobile-nav ul {
-  padding: 0px;
   text-align: center;
+  padding-right: 1em;
+  padding-left: 1em;
 }
 
 .mobile-nav li {
@@ -132,8 +129,7 @@ nav a,
 .hamburger-label {
   text-align: right;
   color: #fff;
-  padding: 10px;
-  padding-top: 3.75em;
+  padding-top: 4em;
   padding-right: 2em;
   font-size: 1.5em;
   display: block;
@@ -143,7 +139,8 @@ nav a,
   display: block;
 }
 
-.mobilenav {
+.mobile-nav,
+.hamburger-label {
   display: none;
 }
 
@@ -157,9 +154,11 @@ nav a,
 
   .mobilenav {
     display: flex;
-    justify-content: right;
-    padding-bottom: 1em;
-    padding-top: 1em;
+    justify-content: center;
+  }
+
+  .hamburger-label {
+    display: block;
   }
 
   body {
@@ -174,10 +173,5 @@ nav a,
     padding-right: 0em;
     padding-left: 2em;
     max-width: 200px;
-  }
-
-  .mobile-menu {
-    display: flex;
-    justify-content: center;
   }
 }
