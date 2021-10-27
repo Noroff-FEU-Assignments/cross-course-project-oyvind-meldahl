@@ -6,6 +6,13 @@ body {
   grid-template-areas: "header header" "main aside" "footer footer";
   grid-template-rows: auto 1fr auto;
   grid-template-columns: 1fr 1fr;
+  margin: auto;
+  max-width: 1980px;
+}
+
+.header-container {
+  max-width: 1980px;
+  margin: auto;
 }
 
 header {
@@ -13,11 +20,11 @@ header {
 }
 main {
   grid-area: main;
-  padding: 2em;
+  padding: 5em;
 }
 aside {
   grid-area: aside;
-  padding: 2em;
+  padding: 5em;
 }
 footer {
   grid-area: footer;
@@ -36,8 +43,11 @@ footer {
 
 .logo {
   max-width: 250px;
+  height: auto;
   float: left;
   padding: 2em;
+  padding-left: 2em;
+  padding-right: 0px;
 }
 
 header a {
@@ -53,7 +63,7 @@ header a:hover {
 .social {
   text-align: right;
   padding-top: 2em;
-  padding-right: 2em;
+  padding-right: 1.5em;
 }
 
 header ul {
@@ -67,13 +77,13 @@ header li {
 nav {
   text-align: right;
   padding-top: 2.25em;
-  padding-right: 2em;
   font-size: 1.25em;
+  padding-right: 1em;
 }
 
 nav a,
 .social a {
-  padding: 1.25em;
+  padding: 0.5em;
 }
 
 .active {
@@ -81,4 +91,77 @@ nav a,
   border-radius: 25px;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.copy {
+  display: flex;
+  justify-content: center;
+}
+
+/* START MOBILE MENU */
+
+.mobile-nav,
+#hamburger-menu {
+  display: none;
+}
+
+.mobile-nav ul {
+  padding: 0px;
+}
+
+.mobile-nav li {
+  display: block;
+}
+
+.mobile-nav a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+  display: block;
+}
+
+.mobile-nav a:hover {
+  text-decoration: underline;
+}
+
+.hamburger-label {
+  text-align: center;
+  color: #fff;
+  padding: 10px;
+  font-size: 1.5em;
+  display: block;
+}
+
+#hamburger-menu:checked ~ .mobile-nav {
+  display: block;
+}
+
+/* Reason for media-query at 760px is to let the iPad Mini, the smallest one, to have web-view. The mini has a portrait-size of 768 x 959 px */
+
+@media (max-width: 767px) {
+  nav,
+  .social,
+  .copy {
+    display: none;
+  }
+
+  body {
+    display: grid;
+    grid-template-areas: "header header" "main main" "aside aside" "footer footer";
+    grid-template-rows: auto 1fr 1fr auto;
+  }
+
+  .logo-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .mobile-menu {
+    display: flex;
+    justify-content: center;
+  }
 }

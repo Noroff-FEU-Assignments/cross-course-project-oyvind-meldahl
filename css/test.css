@@ -1,0 +1,70 @@
+header {
+  background: #119abf;
+  min-height: 100px;
+}
+
+.logo {
+  max-width: 100px;
+}
+
+.mobile-nav,
+#hamburger-menu {
+  display: none;
+}
+
+.mobile-nav ul {
+  padding: 0px;
+}
+
+.mobile-nav li {
+  display: block;
+}
+
+.mobile-nav a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+  display: block;
+}
+
+.mobile-nav a:hover {
+  text-decoration: underline;
+}
+
+.hamburger-label {
+  float: right;
+  color: #fff;
+  padding: 10px;
+  font-size: 1.5em;
+  display: block;
+}
+
+#hamburger-menu:checked ~ .mobile-nav {
+  display: block;
+}
+
+@media (min-width: 600px) {
+  .logo {
+    float: left;
+  }
+
+  .mobile-nav {
+    display: inline-block;
+  }
+
+  .hamburger-label {
+    display: none;
+  }
+
+  .mobile-nav ul {
+    display: flex;
+  }
+
+  .mobile-nav li {
+    display: inline-block;
+  }
+
+  .mobile-nav a {
+    padding: 19% 40px;
+  }
+}
