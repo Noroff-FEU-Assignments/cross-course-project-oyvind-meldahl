@@ -10,25 +10,20 @@ body {
   max-width: 1980px;
 }
 
-.header-container {
-  max-width: 1980px;
-  margin: auto;
-}
-
 header {
   grid-area: header;
 }
 main {
   grid-area: main;
-  padding: 5em;
+  padding: 3em;
 }
 aside {
   grid-area: aside;
-  padding: 5em;
+  padding: 3em;
 }
 footer {
   grid-area: footer;
-  padding: 1em;
+  padding: 0.25em;
 }
 
 main,
@@ -43,11 +38,8 @@ footer {
 
 .logo {
   max-width: 250px;
-  height: auto;
   float: left;
-  padding: 2em;
-  padding-left: 2em;
-  padding-right: 0px;
+  padding: 2em 0em 2em 2em;
 }
 
 header a {
@@ -77,8 +69,8 @@ header li {
 nav {
   text-align: right;
   padding-top: 2.25em;
-  font-size: 1.25em;
   padding-right: 1em;
+  font-size: 1.25em;
 }
 
 nav a,
@@ -89,8 +81,6 @@ nav a,
 .active {
   background-color: #848c5a;
   border-radius: 25px;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
 }
 
 .copy {
@@ -100,39 +90,15 @@ nav a,
 
 /* START MOBILE MENU */
 
-.mobile-nav,
 #hamburger-menu {
   display: none;
 }
 
-.mobile-nav ul {
-  text-align: center;
-  padding-right: 1em;
-  padding-left: 1em;
-}
-
-.mobile-nav li {
-  display: block;
-}
-
-.mobile-nav a {
-  text-decoration: none;
-  color: #fff;
-  padding: 10px;
-  display: block;
-}
-
-.mobile-nav a:hover {
-  text-decoration: underline;
-}
-
 .hamburger-label {
-  text-align: right;
-  color: #fff;
-  padding-top: 3em;
-  padding-bottom: 3em;
-  padding-right: 2em;
-  font-size: 1.5em;
+  color: #f2f2f2;
+  padding-top: 4em;
+  padding-bottom: 1em;
+  padding-right: 3em;
   display: block;
 }
 
@@ -140,11 +106,10 @@ nav a,
   float: right;
 }
 
-#hamburger-menu:checked ~ .mobile-nav {
+#hamburger-menu:checked ~ nav {
   display: block;
 }
 
-.mobile-nav,
 .hamburger-label {
   display: none;
 }
@@ -154,6 +119,7 @@ nav a,
   height: 5px;
   background-color: #f2f2f2;
   margin: 6px 0;
+  border-radius: 25px;
 }
 
 /* Reason for media-query at 767px is to let the iPad Mini, the smallest one, to have web-view. The mini has a portrait-size of 768 x 959 px */
@@ -164,11 +130,13 @@ nav a,
     display: none;
   }
 
-  .mobilenav {
-    display: flex;
-    justify-content: center;
+  nav ul {
+    text-align: center;
+    padding-right: 1em;
+    padding-left: 1em;
   }
 
+  nav a,
   .hamburger-label {
     display: block;
   }
@@ -177,14 +145,10 @@ nav a,
     display: grid;
     grid-template-areas: "header header" "main main" "aside aside" "footer footer";
     grid-template-rows: auto auto 1fr auto;
-    grid-column: 1fr;
   }
 
   .logo {
-    padding-top: 2em;
-    padding-bottom: 2em;
-    padding-right: 0em;
-    padding-left: 2em;
+    padding: 2em 0em 2em 2em;
     max-width: 200px;
   }
 }
