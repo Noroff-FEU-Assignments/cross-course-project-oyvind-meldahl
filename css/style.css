@@ -177,6 +177,7 @@ nav a,
     display: grid;
     grid-template-areas: "header header" "main main" "aside aside" "footer footer";
     grid-template-rows: auto auto 1fr auto;
+    grid-column: 1fr;
   }
 
   .logo {
