@@ -130,10 +130,14 @@ nav a,
   text-align: right;
   color: #fff;
   padding-top: 3em;
-  padding-bottom: 1em;
+  padding-bottom: 3em;
   padding-right: 2em;
   font-size: 1.5em;
   display: block;
+}
+
+.icon {
+  float: right;
 }
 
 #hamburger-menu:checked ~ .mobile-nav {
@@ -143,6 +147,13 @@ nav a,
 .mobile-nav,
 .hamburger-label {
   display: none;
+}
+
+.hamburgericon {
+  width: 35px;
+  height: 5px;
+  background-color: #f2f2f2;
+  margin: 6px 0;
 }
 
 /* Reason for media-query at 767px is to let the iPad Mini, the smallest one, to have web-view. The mini has a portrait-size of 768 x 959 px */
