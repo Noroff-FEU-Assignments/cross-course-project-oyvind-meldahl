@@ -147,7 +147,7 @@ h2 {
 
 .hamburger-label {
   color: #f2f2f2;
-  padding-top: 4em;
+  padding-top: 3em;
   padding-bottom: 1em;
   padding-right: 3em;
   display: block;
@@ -204,20 +204,24 @@ h2 {
 
   .logo {
     padding: 2em 0em 2em 2em;
-    max-width: 200px;
+    max-width: 125px;
   }
 
   h1 {
-    font-size: 2em;
+    font-size: 1.5em;
   }
 
   h2 {
-    font-size: 1.5em;
+    font-size: 1.25em;
   }
 
   h1,
   h2 {
     color: #262626;
+  }
+
+  .firstmain {
+    min-height: 35em;
   }
 }
 
