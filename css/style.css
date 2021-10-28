@@ -15,7 +15,8 @@ header {
 }
 main {
   grid-area: main;
-  padding: 3em;
+  padding-left: 2em;
+  padding-right: 2em;
 }
 aside {
   grid-area: aside;
@@ -29,10 +30,6 @@ footer {
 main,
 aside {
   background: #f2f2f2;
-}
-
-.homepage {
-  background: #262626;
 }
 
 .frontsplash {
@@ -95,15 +92,12 @@ nav a,
 }
 
 .homepage h1 {
-  font-size: 3em;
+  font-size: 2em;
   padding-bottom: 0;
-  margin-bottom: 0;
-  border-bottom: solid #b70d0d 2px;
-  border-bottom-width: 10;
 }
 
 .homepage h2 {
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 .homepage p {
@@ -114,12 +108,28 @@ nav a,
 .homepage h1,
 h2,
 p {
-  color: #f2f2f2;
+  color: #262626;
 }
 
 .copy {
   display: flex;
   justify-content: center;
+}
+
+.ctabuttonfront {
+  background-color: #b70d0d;
+  border: none;
+  color: #f2f2f2;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 25px;
+  padding: 1em;
+  font-weight: bold;
+  font-size: 1.25em;
+}
+
+.ctabuttonfront:hover {
+  color: #262626;
 }
 
 /* START MOBILE MENU */
@@ -178,7 +188,11 @@ p {
   body {
     display: grid;
     grid-template-areas: "header header" "main main" "aside aside" "footer footer";
-    grid-template-rows: auto auto 1fr auto;
+    grid-template-rows: auto 1fr auto auto;
+  }
+
+  aside {
+    display: none;
   }
 
   .logo {
@@ -186,13 +200,11 @@ p {
     max-width: 200px;
   }
 
-  .homepage h1 {
-    padding-top: 0;
-    margin-bottom: 0;
-  }
-
-  .homepage {
-    text-align: center;
+  main {
+    background-image: url("/images/front_one.jpg");
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: 100%;
   }
 
   .frontsplash {
