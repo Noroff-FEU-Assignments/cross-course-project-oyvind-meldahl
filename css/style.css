@@ -116,22 +116,6 @@ p {
   justify-content: center;
 }
 
-.ctabuttonfront {
-  background-color: #b70d0d;
-  border: none;
-  color: #f2f2f2;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 25px;
-  padding: 1em;
-  font-weight: bold;
-  font-size: 1.25em;
-}
-
-.ctabuttonfront:hover {
-  color: #262626;
-}
-
 /* START MOBILE MENU */
 
 #hamburger-menu {
@@ -207,7 +191,31 @@ p {
     background-size: 100%;
   }
 
+  .homepage h1 {
+    font-size: 1.5em;
+  }
+
+  .homepage h2 {
+    font-size: 1.25em;
+  }
+
   .frontsplash {
     display: none;
+  }
+
+  .ctabuttonfront {
+    background-color: #b70d0d;
+    border: none;
+    color: #f2f2f2;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 25px;
+    padding: 0.5em;
+    font-size: 1em;
+    font-weight: bold;
+  }
+
+  .ctabuttonfront:hover {
+    color: #262626;
   }
 }
