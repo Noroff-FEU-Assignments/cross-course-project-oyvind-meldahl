@@ -3,8 +3,9 @@ body {
   margin: 0;
   min-height: 100vh;
   display: grid;
-  grid-template-areas: "header header" "main aside" "main2 aside" "main3 aside" "footer footer";
-  grid-template-rows: auto 1fr 1fr 1fr auto;
+  grid-template-areas: "header" "main" "main2" "main3" "footer";
+  grid-template-rows: auto 3fr 1fr 1fr auto;
+  grid-template-columns: 2fr;
   margin: auto;
   max-width: 1980px;
 }
@@ -28,7 +29,9 @@ header {
 
 aside {
   grid-area: aside;
+  display: none;
 }
+
 footer {
   grid-area: footer;
   padding: 1em;
@@ -125,7 +128,7 @@ h2 {
 
 .firstmain {
   background-image: url("/images/front_one.jpg");
-  background-position: top center;
+  background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
@@ -139,6 +142,20 @@ h2 {
   height: 100%;
 }
 
+div.polaroid {
+  width: 80%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div.container {
+  text-align: center;
+  padding: 10px 20px;
+}
+
 /* START MOBILE MENU */
 
 #hamburger-menu {
@@ -149,7 +166,7 @@ h2 {
   color: #f2f2f2;
   padding-top: 2em;
   padding-bottom: 1em;
-  padding-right: 3em;
+  padding-right: 2em;
   display: block;
 }
 
@@ -195,7 +212,8 @@ h2 {
   body {
     display: grid;
     grid-template-areas: "header" "main" "main2" "main3" "footer";
-    grid-template-rows: auto 1fr 1fr 1fr auto;
+    grid-template-rows: auto 3fr 1fr 1fr auto;
+    grid-template-columns: 1fr;
   }
 
   aside {
@@ -213,15 +231,12 @@ h2 {
 
   h2 {
     font-size: 1.25em;
+    padding-bottom: 1.5em;
   }
 
   h1,
   h2 {
     color: #262626;
-  }
-
-  .firstmain {
-    min-height: 35em;
   }
 }
 
