@@ -4,8 +4,7 @@ body {
   min-height: 100vh;
   display: grid;
   grid-template-areas: "header" "main" "main2" "main3" "footer";
-  grid-template-rows: auto 3fr 1fr 1fr auto;
-  grid-template-columns: 2fr;
+  grid-template-rows: auto 1fr 1fr 1fr auto;
   margin: auto;
   max-width: 1980px;
 }
@@ -16,15 +15,20 @@ header {
 }
 .firstmain {
   grid-area: main;
-  min-height: 50em;
+  min-height: 20em;
+  border: solid #262626;
+  border-bottom: none;
 }
 
 .secondmain {
   grid-area: main2;
+  border: solid #262626;
+  border-bottom: none;
 }
 
 .thirdmain {
   grid-area: main3;
+  border: solid #262626;
 }
 
 aside {
@@ -46,6 +50,7 @@ aside {
 header,
 footer {
   color: #f2f2f2;
+  font-family: "Playfair Display", serif;
 }
 
 .logo {
@@ -84,7 +89,7 @@ nav {
 
 nav a,
 .social a {
-  padding: 0.5em;
+  padding: 1em;
 }
 
 .active {
@@ -127,33 +132,24 @@ h2 {
 }
 
 .firstmain {
-  background-image: url("/images/front_one.jpg");
-  background-position: bottom;
+  background-image: url("/images/front_three.jpg");
+  background-position: left center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100%;
+}
+
+.secondmain {
+  background-image: url("/images/front_one.jpg");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .thirdmain {
-  background-image: url("/images/front_one.jpg");
-  background-position: top center;
+  background-image: url("/images/front_two.jpg");
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100%;
-}
-
-div.polaroid {
-  width: 80%;
-  background-color: white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin-bottom: 25px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-div.container {
-  text-align: center;
-  padding: 10px 20px;
 }
 
 /* START MOBILE MENU */
@@ -198,28 +194,6 @@ div.container {
     display: none;
   }
 
-  nav ul {
-    text-align: center;
-    padding-right: 1em;
-    padding-left: 1em;
-  }
-
-  nav a,
-  .hamburger-label {
-    display: block;
-  }
-
-  body {
-    display: grid;
-    grid-template-areas: "header" "main" "main2" "main3" "footer";
-    grid-template-rows: auto 3fr 1fr 1fr auto;
-    grid-template-columns: 1fr;
-  }
-
-  aside {
-    display: none;
-  }
-
   .logo {
     padding: 1em 0em 1em 2em;
     max-width: 150px;
@@ -238,10 +212,55 @@ div.container {
   h2 {
     color: #262626;
   }
+
+  nav ul {
+    text-align: center;
+    padding-right: 1em;
+    padding-left: 1em;
+  }
+
+  nav a,
+  .hamburger-label {
+    display: block;
+  }
+
+  .hamburger-label {
+    color: #f2f2f2;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    padding-right: 2em;
+    display: block;
+  }
 }
 
 @media (min-width: 1981px) {
   body {
     border: #262626 solid;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 980px) {
+  nav,
+  .social {
+    display: none;
+  }
+
+  nav ul {
+    text-align: center;
+    padding-right: 1em;
+    padding-left: 1em;
+  }
+
+  nav a,
+  .hamburger-label {
+    display: block;
+  }
+
+  .hamburger-label {
+    color: #f2f2f2;
+    padding-top: 4em;
+    padding-bottom: 3em;
+    padding-right: 2em;
+    display: block;
   }
 }
