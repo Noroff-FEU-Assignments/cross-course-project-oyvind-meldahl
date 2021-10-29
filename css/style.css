@@ -3,8 +3,9 @@ body {
   margin: 0;
   min-height: 100vh;
   display: grid;
-  grid-template-areas: "header" "main" "main2" "main3" "footer";
+  grid-template-areas: "header header header" "main main main" "main2 main2 main2" "main4 main5 main6" "footer footer footer";
   grid-template-rows: auto 1fr 1fr 1fr auto;
+  grid-template-columns: 1fr 1fr 1fr;
   margin: auto;
   max-width: 1980px;
 }
@@ -13,22 +14,26 @@ header {
   grid-area: header;
   background-color: #262626;
 }
+
 .firstmain {
   grid-area: main;
-  min-height: 20em;
-  border: solid #262626;
-  border-bottom: none;
+  min-height: 30em;
 }
 
 .secondmain {
   grid-area: main2;
-  border: solid #262626;
-  border-bottom: none;
 }
 
-.thirdmain {
-  grid-area: main3;
-  border: solid #262626;
+.fourthmain {
+  grid-area: main4;
+}
+
+.fiftmain {
+  grid-area: main5;
+}
+
+.sixtmain {
+  grid-area: main6;
 }
 
 aside {
@@ -38,7 +43,7 @@ aside {
 
 footer {
   grid-area: footer;
-  padding: 1em;
+  padding: 0.5em;
   background-color: #262626;
 }
 
@@ -132,22 +137,36 @@ h2 {
 }
 
 .firstmain {
-  background-image: url("/images/front_three.jpg");
+  background-image: url("/images/haveng.jpg");
   background-position: left center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .secondmain {
-  background-image: url("/images/front_one.jpg");
-  background-position: left;
+  background-image: url("/images/gulskog.jpg");
+  background-position: left center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.thirdmain {
+.fourthmain {
+  background-image: url("/images/fjell.jpg");
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fiftmain {
   background-image: url("/images/front_two.jpg");
-  background-position: center;
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sixtmain {
+  background-image: url("/images/solnedgang.jpg");
+  background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -262,5 +281,23 @@ h2 {
     padding-bottom: 3em;
     padding-right: 2em;
     display: block;
+  }
+}
+
+@media (max-width: 980px) {
+  body {
+    grid-template-areas: "header" "main" "main2" "main4" "main5" "main6" "footer";
+    grid-template-rows: auto 1fr 1fr 1fr 1fr 1fr auto;
+    grid-template-columns: 1fr;
+    margin: auto;
+    max-width: 1980px;
+  }
+
+  .firstmain,
+  .secondmain,
+  .fourthmain,
+  .fiftmain,
+  .sixtmain {
+    border-bottom: none;
   }
 }
