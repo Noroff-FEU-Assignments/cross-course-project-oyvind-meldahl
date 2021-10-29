@@ -3,7 +3,7 @@ body {
   margin: 0;
   min-height: 100vh;
   display: grid;
-  grid-template-areas: "header header header" "main main main" "main2 main2 main2" "main4 main5 main6" "footer footer footer";
+  grid-template-areas: "header header header" "main main main" "main2 main2 main2" "main4 main6 main5" "footer footer footer";
   grid-template-rows: auto 1fr 1fr 1fr auto;
   grid-template-columns: 1fr 1fr 1fr;
   margin: auto;
@@ -18,6 +18,7 @@ header {
 .firstmain {
   grid-area: main;
   min-height: 30em;
+  color: #f2f2f2;
 }
 
 .secondmain {
@@ -34,6 +35,7 @@ header {
 
 .sixtmain {
   grid-area: main6;
+  color: #f2f2f2;
 }
 
 aside {
@@ -110,9 +112,8 @@ h2 {
   font-size: 2em;
 }
 
-h1,
-h2 {
-  color: #f2f2f2;
+h3 {
+  font-size: 1.5em;
 }
 
 .copy {
@@ -144,7 +145,7 @@ h2 {
 }
 
 .secondmain {
-  background-image: url("/images/gulskog.jpg");
+  background-image: url("/images/solnedgang.jpg");
   background-position: left center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -165,7 +166,7 @@ h2 {
 }
 
 .sixtmain {
-  background-image: url("/images/solnedgang.jpg");
+  background-image: url("/images/drip.jpg");
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -219,17 +220,12 @@ h2 {
   }
 
   h1 {
-    font-size: 1.5em;
+    font-size: 1.75em;
   }
 
   h2 {
     font-size: 1.25em;
     padding-bottom: 1.5em;
-  }
-
-  h1,
-  h2 {
-    color: #f2f2f2;
   }
 
   nav ul {
