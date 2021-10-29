@@ -1,5 +1,5 @@
 body {
-  background: #f2f2f2;
+  background-color: #262626;
   margin: 0;
   min-height: 100vh;
   display: grid;
@@ -12,52 +12,58 @@ body {
 
 header {
   grid-area: header;
-  background-color: #262626;
 }
 
 .firstmain {
   grid-area: main;
-  min-height: 30em;
+  min-height: 25em;
   color: #f2f2f2;
+  background-image: url("/images/haveng.jpg");
 }
 
 .secondmain {
   grid-area: main2;
+  background-image: url("/images/solnedgang.jpg");
 }
 
 .fourthmain {
   grid-area: main4;
+  background-image: url("/images/fjell.jpg");
 }
 
 .fiftmain {
   grid-area: main5;
+  background-image: url("/images/front_two.jpg");
 }
 
 .sixtmain {
   grid-area: main6;
   color: #f2f2f2;
+  background-image: url("/images/drip.jpg");
 }
 
-aside {
-  grid-area: aside;
-  display: none;
+.firstmain,
+.secondmain,
+.fourthmain,
+.fiftmain,
+.sixtmain {
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 footer {
   grid-area: footer;
   padding: 0.5em;
-  background-color: #262626;
 }
 
-main,
-aside {
+main {
   padding-left: 1em;
 }
 
 header,
 footer {
   color: #f2f2f2;
-  font-family: "Playfair Display", serif;
 }
 
 .logo {
@@ -89,8 +95,7 @@ header ul li {
 
 nav {
   text-align: right;
-  padding-top: 2.25em;
-  padding-right: 1em;
+  padding: 2.25em 1em 0em;
   font-size: 1.25em;
 }
 
@@ -106,14 +111,12 @@ nav a,
 
 h1 {
   font-size: 3em;
+  font-family: "Playfair Display", serif;
 }
 
 h2 {
-  font-size: 2em;
-}
-
-h3 {
   font-size: 1.5em;
+  font-family: "Open Sans", serif;
 }
 
 .copy {
@@ -137,46 +140,7 @@ h3 {
   color: #262626;
 }
 
-.firstmain {
-  background-image: url("/images/haveng.jpg");
-  background-position: left center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.secondmain {
-  background-image: url("/images/solnedgang.jpg");
-  background-position: left center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.fourthmain {
-  background-image: url("/images/fjell.jpg");
-  background-position: left center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.fiftmain {
-  background-image: url("/images/front_two.jpg");
-  background-position: left center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.sixtmain {
-  background-image: url("/images/drip.jpg");
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 /* START MOBILE MENU */
-
-#hamburger-menu {
-  display: none;
-}
 
 .hamburger-label {
   color: #f2f2f2;
@@ -194,7 +158,8 @@ h3 {
   display: block;
 }
 
-.hamburger-label {
+.hamburger-label,
+#hamburger-menu {
   display: none;
 }
 
@@ -209,11 +174,6 @@ h3 {
 /* Reason for media-query at 767px is to let the iPad Mini, the smallest one, to have web-view. The mini has a portrait-size of 768 x 959 px */
 
 @media (max-width: 767px) {
-  nav,
-  .social {
-    display: none;
-  }
-
   .logo {
     padding: 1em 0em 1em 2em;
     max-width: 150px;
@@ -224,65 +184,18 @@ h3 {
   }
 
   h2 {
-    font-size: 1.25em;
+    font-size: 1em;
     padding-bottom: 1.5em;
   }
 
-  nav ul {
-    text-align: center;
-    padding-right: 1em;
-    padding-left: 1em;
-  }
-
-  nav a,
   .hamburger-label {
-    display: block;
-  }
-
-  .hamburger-label {
-    color: #f2f2f2;
-    padding-top: 2em;
     padding-bottom: 2em;
-    padding-right: 2em;
-    display: block;
-  }
-}
-
-@media (min-width: 1981px) {
-  body {
-    border: #262626 solid;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 980px) {
-  nav,
-  .social {
-    display: none;
-  }
-
-  nav ul {
-    text-align: center;
-    padding-right: 1em;
-    padding-left: 1em;
-  }
-
-  nav a,
-  .hamburger-label {
-    display: block;
-  }
-
-  .hamburger-label {
-    color: #f2f2f2;
-    padding-top: 4em;
-    padding-bottom: 3em;
-    padding-right: 2em;
-    display: block;
   }
 }
 
 @media (max-width: 980px) {
   body {
-    grid-template-areas: "header" "main" "main2" "main4" "main5" "main6" "footer";
+    grid-template-areas: "header" "main" "main2" "main4" "main6" "main5" "footer";
     grid-template-rows: auto 1fr 1fr 1fr 1fr 1fr auto;
     grid-template-columns: 1fr;
     margin: auto;
@@ -295,5 +208,34 @@ h3 {
   .fiftmain,
   .sixtmain {
     border-bottom: none;
+    background-position: center;
+  }
+
+  nav a,
+  .hamburger-label {
+    display: block;
+  }
+
+  nav,
+  .social {
+    display: none;
+  }
+
+  nav ul {
+    text-align: center;
+    padding: 0em 1em 0em 1em;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 980px) {
+  .hamburger-label {
+    padding-top: 4em;
+    padding-bottom: 3em;
+  }
+}
+
+@media (min-width: 1981px) {
+  body {
+    border: #262626 solid;
   }
 }
