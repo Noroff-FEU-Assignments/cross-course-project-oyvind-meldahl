@@ -1,9 +1,10 @@
 body {
-  background-color: #262626;
+  font-family: "Roboto Slab", serif;
+  background-color: #f2f2f2;
   margin: 0;
   min-height: 100vh;
   display: grid;
-  grid-template-areas: "header header header" "main main main" "main2 main2 main2" "main4 main6 main5" "footer footer footer";
+  grid-template-areas: "header header header" "main main main" "main2 main2 main2" "main3 main4 main5" "footer footer footer";
   grid-template-rows: auto 1fr 1fr 1fr auto;
   grid-template-columns: 1fr 1fr 1fr;
   margin: auto;
@@ -12,41 +13,40 @@ body {
 
 header {
   grid-area: header;
+  font-family: "Playfair Display", serif;
 }
 
-.firstmain {
+.mainone {
   grid-area: main;
   min-height: 25em;
-  color: #f2f2f2;
-  background-image: url("/images/haveng.jpg");
+  background-image: url("/images/horisont.jpg");
 }
 
-.secondmain {
+.maintwo {
   grid-area: main2;
   background-image: url("/images/solnedgang.jpg");
 }
 
-.fourthmain {
+.mainthree {
+  grid-area: main3;
+  background-image: url("/images/blomster.jpg");
+}
+
+.mainfour {
   grid-area: main4;
-  background-image: url("/images/fjell.jpg");
+  background-image: url("/images/white.jpg");
 }
 
-.fiftmain {
+.mainfive {
   grid-area: main5;
-  background-image: url("/images/front_two.jpg");
+  background-image: url("/images/skog.jpg");
 }
 
-.sixtmain {
-  grid-area: main6;
-  color: #f2f2f2;
-  background-image: url("/images/drip.jpg");
-}
-
-.firstmain,
-.secondmain,
-.fourthmain,
-.fiftmain,
-.sixtmain {
+.mainone,
+.maintwo,
+.mainthree,
+.mainfour,
+.mainfive {
   background-position: left center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -64,6 +64,7 @@ main {
 header,
 footer {
   color: #f2f2f2;
+  background-color: #262626;
 }
 
 .logo {
@@ -101,7 +102,7 @@ nav {
 
 nav a,
 .social a {
-  padding: 1em;
+  padding: 0.5em;
 }
 
 .active {
@@ -112,11 +113,6 @@ nav a,
 h1 {
   font-size: 3em;
   font-family: "Playfair Display", serif;
-}
-
-h2 {
-  font-size: 1.5em;
-  font-family: "Open Sans", serif;
 }
 
 .copy {
@@ -195,19 +191,18 @@ h2 {
 
 @media (max-width: 980px) {
   body {
-    grid-template-areas: "header" "main" "main2" "main4" "main6" "main5" "footer";
+    grid-template-areas: "header" "main" "main2" "main3" "main4" "main5" "footer";
     grid-template-rows: auto 1fr 1fr 1fr 1fr 1fr auto;
     grid-template-columns: 1fr;
     margin: auto;
     max-width: 1980px;
   }
 
-  .firstmain,
-  .secondmain,
-  .fourthmain,
-  .fiftmain,
-  .sixtmain {
-    border-bottom: none;
+  .mainone,
+  .maintwo,
+  .mainthree,
+  .mainfour,
+  .mainfive {
     background-position: center;
   }
 
