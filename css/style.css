@@ -79,15 +79,16 @@ header a {
   text-decoration: none;
 }
 
-header a:hover {
+nav a:hover {
   text-decoration: underline;
   text-decoration-color: #b70d0d;
 }
 
-.social {
+.socialweb {
   text-align: right;
-  padding-top: 2em;
-  padding-right: 1.5em;
+  padding-top: 1em;
+  padding-right: 1.0em;
+  font-size: 1.5em;
 }
 
 header ul li {
@@ -102,7 +103,7 @@ nav {
 }
 
 nav a,
-.social a {
+.socialweb a {
   padding: 0.5em;
 }
 
@@ -140,6 +141,10 @@ h2 {
 
 .ctabuttonfront:hover {
   color: #262626;
+}
+
+.socialmobile {
+  display: none;
 }
 
 /* START MOBILE MENU */
@@ -217,8 +222,15 @@ h2 {
     display: block;
   }
 
+.socialmobile {
+  padding-top: 0.5em;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 1.5em;
+}
+
   nav,
-  .social {
+  .socialweb {
     display: none;
   }
 
