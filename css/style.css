@@ -116,7 +116,7 @@ h1 {
 }
 
 h2 {
-  margin-top: -1em;
+  margin-top: -0.5em;
   font-size: 1.5em;
 }
 
@@ -190,7 +190,7 @@ h2 {
   }
 
   .hamburger-label {
-    padding-bottom: 2em;
+    padding-bottom: 1.5em;
   }
 }
 
