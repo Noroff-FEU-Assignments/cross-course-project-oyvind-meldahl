@@ -152,16 +152,14 @@ p {
 
 .hamburger-label {
   color: #f2f2f2;
-  padding: 2em 2em 1em 0;
+  padding: 2em 2em 0em 0;
   display: block;
-}
-
-.icon {
   float: right;
 }
 
 #hamburger-menu:checked ~ nav {
   display: block;
+  padding-top: 5em;
 }
 
 .hamburger-label,
