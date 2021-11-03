@@ -170,13 +170,6 @@ p {
 #hamburger-menu {
   display: none;
 }
-
-.hamburgericon {
-  width: 35px;
-  height: 5px;
-  background-color: #f2f2f2;
-  margin: 6px 0;
-  border-radius: 25px;
 }
 
 /* Media-query at 767px to let the iPad Mini, the smallest "mainstream" one, to have web-view with hamburgermenu. The mini is 768 x 959 px */
