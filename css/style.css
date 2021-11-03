@@ -150,6 +150,10 @@ p {
 
 /* MOBILE MENU */
 
+.fas {
+  font-size: 2em;
+}
+
 .hamburger-label {
   color: #f2f2f2;
   padding: 2em 2em 0em 0;
