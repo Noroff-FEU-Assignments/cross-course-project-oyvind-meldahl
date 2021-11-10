@@ -438,6 +438,14 @@ p {
     grid-template-areas: "main-section-one" "main-section-two" "main-section-three" "main-section-four" "main-section-five" ;
   }
 
+  .explorewrapper {
+    grid-template-areas: "explore-section-one explore-section-two" "explore-section-top explore-section-top" ;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5em;
+    padding: 0.5em 0em 0.5em 0em;
+  }
+
   nav a,
   .hamburger-label {
     display: block;
