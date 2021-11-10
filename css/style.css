@@ -439,8 +439,9 @@ p {
   }
 
   .explorewrapper {
-    grid-template-areas: "explore-section-top" "explore-section-one" "explore-section-two" ;
+    grid-template-areas:  "explore-section-one" "explore-section-two" "explore-section-top" ;
     grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
   }
 
   nav a,
