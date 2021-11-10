@@ -439,11 +439,8 @@ p {
   }
 
   .explorewrapper {
-    grid-template-areas: "explore-section-one explore-section-two" "explore-section-top explore-section-top" ;
-    grid-template-rows: auto 1fr;
-    grid-template-columns: 1fr 1fr;
-    gap: 0.5em;
-    padding: 0.5em 0em 0.5em 0em;
+    grid-template-areas: "explore-section-top" "explore-section-one" "explore-section-two" ;
+    grid-template-columns: 1fr;
   }
 
   nav a,
