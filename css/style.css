@@ -361,6 +361,8 @@ p {
 
 #sizing {
   font-size: 1.2em;
+  padding-right: 3em;
+  margin-right: 1.5em;
 }
 
 .ctabuttonfront {
@@ -373,6 +375,7 @@ p {
   padding: 0.5em;
   font-size: 1em;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .ctabuttonfront:hover {
