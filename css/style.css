@@ -100,7 +100,7 @@ main {
 .jacketdetailwrapper {
   display: grid;
   grid-area: wrapper;
-  grid-template-areas: "backtop backtop" "jacketdetailimage jacketdetailbuy" "jacketdesc jacketdesc";
+  grid-template-areas: "jacketdetailimage jacketdetailbuy" "jacketdesc jacketdesc";
   grid-template-columns: 1fr 1fr;
   padding-top: 1em;
 }
@@ -115,13 +115,7 @@ main {
  }
 
  .jacketdetail:nth-child(3) {
-   grid-area: backtop;
-   margin-bottom: -2em;
- }
-
- .jacketdetail:nth-child(4) {
   grid-area: jacketdesc;
-  padding-top: 2em;
 }
 
 .jackets-section:nth-child(1) {
@@ -202,7 +196,7 @@ main {
   min-height: 20em;
 }
 
-.jackets-section, .jacketdetail {
+.jackets-section, .jacketdetail, .about-team {
   padding: 0em 1em 0em 1em;
 }
 
@@ -218,7 +212,7 @@ main {
   grid-area: about-section-two;
  }
 
-.about-section:nth-child(3) {
+.about-team {
  grid-area: about-team;
 }
 
@@ -264,10 +258,11 @@ main {
 .article:nth-child(4) {
   background-image: url(/images/kveld.jpg);
   grid-area: article-four;
+  color: #f2f2f2;
 }
 
 
-.article:nth-child(5) {
+.article-archive {
   background: #f2f2f2;
   grid-area: archive;
 }
@@ -282,6 +277,8 @@ main {
   display: flex;
   justify-content: space-around;
 }
+
+
 
 .alignleft {
   text-align: left;
@@ -352,7 +349,6 @@ h2 {
 .h2-archive {
   font-size: 2.5em;
   font-family: "Playfair Display", serif;
-  padding-top: 1.5em;
 }
 
 p {
@@ -409,8 +405,6 @@ p {
   display: none;
 }
 
-/* Media-query at 767px to let the iPad Mini, the smallest "mainstream" one, to have web-view with hamburgermenu. The mini is 768 x 959 px */
-
 @media (max-width: 767px) {
   .logo {
     padding: 1em 0em 1em 2em;
@@ -440,12 +434,27 @@ p {
   }
 
   .jacketdetailwrapper {
-    display: grid;
-    grid-area: wrapper;
-    grid-template-areas: "backtop" "jacketdetailimage" "jacketdetailbuy" "jacketdesc";
+    grid-template-areas:  "jacketdetailimage" "jacketdetailbuy" "jacketdesc";
     grid-template-columns: 1fr;
-    padding-top: 1em;
   }
+
+  .articleswrapper {
+    grid-template-areas: "article-one" "article-two" "article-three" "article-four";
+    grid-template-columns: 1fr;
+    gap: 0.5em;
+    padding: 0.5em 0em 0.5em 0em;
+  }
+
+  .article-archive {
+    display: none;
+  }
+
+  .aboutwrapper {
+    grid-template-areas: "about-section-one" "about-section-two" "about-team";
+    grid-template-columns: 1fr;
+  }
+
+
 
 }
 
@@ -459,8 +468,6 @@ p {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr auto;
   }
-
-
 
   nav a,
   .hamburger-label {
@@ -499,4 +506,17 @@ p {
     grid-template-columns: 1fr 1fr;
   }
 
+  .jacketdetailwrapper {
+    grid-template-areas: "jacketdetailimage jacketdetailbuy" "jacketdesc jacketdesc" ;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 1em;
+  }
+
+}
+
+@media (min-width: 768px) {
+  .teamjustify {
+    display: flex;
+    justify-content: space-evenly;
+  }
 }
