@@ -431,6 +431,19 @@ p {
     display: none;
   }
 
+  .jacketswrapper {
+    grid-template-areas: "jackets-section-top" "jackets-section-one" "jackets-section-two" "jackets-section-three" "jackets-section-four" "jackets-section-five" "jackets-section-six";
+    grid-template-columns: 1fr;
+  }
+
+  .jacketdetailwrapper {
+    display: grid;
+    grid-area: wrapper;
+    grid-template-areas: "backtop" "jacketdetailimage" "jacketdetailbuy" "jacketdesc";
+    grid-template-columns: 1fr;
+    padding-top: 1em;
+  }
+
 }
 
 @media (max-width: 980px) {
@@ -443,6 +456,8 @@ p {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr auto;
   }
+
+
 
   nav a,
   .hamburger-label {
@@ -474,6 +489,11 @@ p {
 
   .socialmobile {
     display: none;
+  }
+
+  .jacketswrapper {
+    grid-template-areas: "jackets-section-top jackets-section-top" "jackets-section-one jackets-section-two" "jackets-section-three jackets-section-four" "jackets-section-five jackets-section-six";
+    grid-template-columns: 1fr 1fr;
   }
 
 }
