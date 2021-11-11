@@ -10,6 +10,26 @@ body {
   grid-template-rows: auto 1fr auto;
 }
 
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+.aboutwrapper h2, .aboutwrapper h3 {
+  font-size: 3em;
+}
+
+.contactwrapper h2 {
+  margin-top: 1.75em;
+}
+
+p {
+  font-size: 1.2em;
+}
+
 hr {
   margin-top: 2.5em;
   margin-bottom: 2.5em;
@@ -46,7 +66,6 @@ main {
   grid-area: wrapper;
   grid-template-areas: "main-section-one main-section-one main-section-one" "main-section-two main-section-two main-section-two" "main-section-three main-section-four main-section-five";
   gap: 0.5em;
-  padding: 0.5em 0em 0.5em 0em;
 }
 
 .aboutwrapper {
@@ -55,17 +74,14 @@ main {
   grid-template-areas: "about-section-one about-section-two" "about-team about-team";
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 1fr auto;
-  gap: 0.5em;
-  padding: 0.5em 0em 0.5em 0em;
 }
 
 .articleswrapper {
   display: grid;
   grid-area: wrapper;
-  grid-template-areas: "article-one archive" "article-two archive" "article-three archive" "article-four archive";
+  grid-template-areas: "article-one archive" "article-two archive" "article-three archive";
   grid-template-columns: 2fr 1fr;
   gap: 0.5em;
-  padding: 0.5em 0em 0.5em 0em;
 }
 
 .contactwrapper {
@@ -73,8 +89,6 @@ main {
   grid-area: wrapper;
   grid-template-areas: "about-section-one about-section-two" "about-section-one about-section-two";
   grid-template-columns: 2fr 1fr;
-  gap: 0.5em;
-  padding: 0.5em 0em 0.5em 0em;
 }
 
 .explorewrapper {
@@ -84,7 +98,6 @@ main {
   grid-template-rows: auto 1fr;
   grid-template-columns: 1fr 1fr;
   gap: 0.5em;
-  padding: 0.5em 0em 0.5em 0em;
 }
 
 .jacketswrapper {
@@ -93,8 +106,6 @@ main {
   grid-template-areas: "jackets-section-top jackets-section-top jackets-section-top" "jackets-section-one jackets-section-two jackets-section-three" "jackets-section-four jackets-section-five jackets-section-six";
   grid-template-rows: auto 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 0.5em;
-  padding: 0.5em 0em 0.5em 0em;
 }
 
 .jacketdetailwrapper {
@@ -102,8 +113,98 @@ main {
   grid-area: wrapper;
   grid-template-areas: "jacketdetailimage jacketdetailbuy" "jacketdesc jacketdesc";
   grid-template-columns: 1fr 1fr;
-  padding-top: 1em;
 }
+
+.cartwrapper {
+  display: grid;
+  grid-area: wrapper;
+  grid-template-areas:  "cart-top cart-top" "cart-topleft cart-topright" "cart-left cart-right" "cart-bottom cart-bottom";
+  grid-template-rows: auto auto auto 1fr;
+  grid-template-columns:  1fr 1fr;
+}
+
+.cartwrapper h1, .cartwrapper h2, .cartwrapper h3 {
+  font-size: 1.2em;
+}
+
+.contactwrapper {
+  display: grid;
+  grid-area: wrapper;
+  grid-template-areas: "about-section-one about-section-two";
+  grid-template-columns: 2fr 1fr;
+}
+
+
+.cart-top {
+  grid-area: cart-top;
+  padding-top: 3em;
+  padding-bottom: 3em;
+ }
+
+ .cart-topleft {
+  grid-area: cart-topleft;
+  
+  margin-left: 7.5em;
+  margin-right: 1em;
+  margin-bottom: 1em;
+ }
+ 
+.cart-topleft h1, .cart-topright h2, .cart-left h2, .cart-right h2, .cart-bottom h3 {
+  background-color: #262626;
+  color: #f2f2f2;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 0.5em;
+  margin-top: 0;
+}
+
+  .cart-topright {
+  grid-area: cart-topright;
+ 
+  margin-right: 7.5em;
+  margin-bottom: 1em;
+ }
+
+ .cart-left {
+  grid-area: cart-left;
+  margin-left: 7.5em;
+  margin-right: 1em;
+  
+  margin-bottom: 1em;
+ }
+
+ .cart-right {
+  grid-area: cart-right;
+  margin-right: 7.5em;
+  
+  margin-bottom: 1em;
+ }
+
+ .cart-bottom {
+  grid-area: cart-bottom;
+  margin-left: 7.5em;
+  margin-right: 7.5em;
+  
+  margin-bottom: 1em;
+ }
+
+ .cart-top-box {
+   display: flex;
+   width: 7.5em;
+   height: 5em;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   font-size: 2em;
+   font-weight: bold;
+   background-color: #cacaca;
+ }
+
+ .cartimage {
+   max-width: 150px;
+ }
+
+
 
 .jacketdetail:nth-child(1) {
   grid-area: jacketdetailimage;
@@ -155,12 +256,7 @@ main {
 .jacketimage {
   max-width: 100%;
   max-height: 500px;
-  margin-bottom: -0em;
 }
-
-
-
-
 
 .main-section:nth-child(1) {
   background-image: url(/images/horisont.jpg);
@@ -196,7 +292,7 @@ main {
   min-height: 20em;
 }
 
-.jackets-section, .jacketdetail, .about-team {
+.jackets-section, .jacketdetail, .about-team, .article-archive {
   padding: 0em 1em 0em 1em;
 }
 
@@ -255,16 +351,10 @@ main {
   color: #f2f2f2;
 }
 
-.article:nth-child(4) {
-  background-image: url(/images/kveld.jpg);
-  grid-area: article-four;
-  color: #f2f2f2;
-}
-
-
 .article-archive {
   background: #f2f2f2;
   grid-area: archive;
+  padding-bottom: 1em;
 }
 
 
@@ -278,7 +368,41 @@ main {
   justify-content: space-around;
 }
 
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 1.2em;
+  border: 1px solid #f2f2f2;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
 
+input[type=submit] {
+  background-color: #b70d0d;
+  color: white;
+  padding: 0.5em;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+input[type=submit]:hover {
+  background-color: #848c5a;
+  color: #262626;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 2em;
+}
+
+#subject {
+  height: 200px;
+}
 
 .alignleft {
   text-align: left;
@@ -337,28 +461,9 @@ nav a,
   border-radius: 25px;
 }
 
-h1 {
-  font-size: 3em;
-  font-family: "Playfair Display", serif;
-}
-
-h2 {
-  font-size: 1.5em;
-}
-
-.h2-archive {
-  font-size: 2.5em;
-  font-family: "Playfair Display", serif;
-}
-
-p {
-  font-size: 1.2em;
-}
-
 #sizing {
   font-size: 1.2em;
-  padding-right: 3em;
-  margin-right: 1.5em;
+  width: 75%;
 }
 
 .ctabuttonfront {
@@ -367,7 +472,7 @@ p {
   border: none;
   text-align: center;
   text-decoration: none;
-  border-radius: 25px;
+  border-radius: 10px;
   padding: 0.5em;
   font-size: 1em;
   font-weight: bold;
@@ -376,6 +481,8 @@ p {
 
 .ctabuttonfront:hover {
   color: #262626;
+  background-color: #848c5a;
+  text-decoration: none;
 }
 
 .socialmobile {
@@ -411,13 +518,8 @@ p {
     max-width: 150px;
   }
 
-  h1 {
-    font-size: 1.75em;
-  }
-
-  h2 {
-    font-size: 1em;
-    padding-bottom: 1em;
+  .h2-archive {
+    display: none;
   }
 
   .hamburger-label {
@@ -425,6 +527,10 @@ p {
   }
 
   .socialweb {
+    display: none;
+  }
+
+  .cart-top {
     display: none;
   }
 
@@ -439,14 +545,10 @@ p {
   }
 
   .articleswrapper {
-    grid-template-areas: "article-one" "article-two" "article-three" "article-four";
+    grid-template-areas: "article-one" "article-two" "article-three" "archive";
     grid-template-columns: 1fr;
     gap: 0.5em;
     padding: 0.5em 0em 0.5em 0em;
-  }
-
-  .article-archive {
-    display: none;
   }
 
   .aboutwrapper {
@@ -454,7 +556,9 @@ p {
     grid-template-columns: 1fr;
   }
 
-
+  .cart-topleft {
+    margin-top: -5em;
+  }
 
 }
 
@@ -468,6 +572,25 @@ p {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr auto;
   }
+
+  .cartwrapper {
+    display: grid;
+    grid-area: wrapper;
+    grid-template-areas:  "cart-top" "cart-topleft" "cart-topright" "cart-left" "cart-right" "cart-bottom";
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-columns:  1fr;
+
+  }
+
+.cart-topleft, .cart-left, .cart-right, .cart-topright, .cart-bottom {
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+.cart-top {
+  padding-top: 3em;
+  padding-bottom: 1em;
+ }
 
   nav a,
   .hamburger-label {
