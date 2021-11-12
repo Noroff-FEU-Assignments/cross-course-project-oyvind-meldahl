@@ -440,7 +440,7 @@ a:hover {
 }
 
 .article:nth-child(3) {
-  background-image: url(/images/horis2.jpg);
+  background-image: url(/images/white.jpg);
   grid-area: article-three;
 }
 
