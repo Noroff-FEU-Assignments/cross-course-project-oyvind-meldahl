@@ -121,7 +121,9 @@ main {
   grid-area: wrapper;
   grid-template-areas: "jacketdetailimage jacketdetailbuy" "jacketdesc jacketdesc";
   grid-template-columns: auto auto;
+  grid-template-rows: auto 1fr;
 }
+
 
 .cartwrapper {
   display: grid;
@@ -159,6 +161,10 @@ main {
   float: right;
   padding-right: 1em;
   font-weight: bold;
+}
+
+.hrmobile {
+  display: none;
 }
 
 .cart-top {
@@ -234,16 +240,20 @@ main {
 
 
 .jacketdetail:nth-child(1) {
+  display: flex;
   grid-area: jacketdetailimage;
-  padding-top: 3em;
-  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1em;
  }
  .jacketdetail:nth-child(2) {
   grid-area: jacketdetailbuy;
+  padding-top: 1em;
  }
 
  .jacketdetail:nth-child(3) {
   grid-area: jacketdesc;
+  padding-top: 2em;
 }
 
 .jackets-section:nth-child(1) {
@@ -363,20 +373,19 @@ main {
  }
 
 .article:nth-child(1) {
-  background-image: url(/images/horisont.jpg);
+  background-image: url(/images/horis.jpg);
   grid-area: article-one;
 }
 
 .article:nth-child(2) {
-  background-image: url(/images/fjell2.jpg);
-  color: #f2f2f2;
+  background-image: url(/images/horis4.jpg);
   grid-area: article-two;
+  color: #f2f2f2;
 }
 
 .article:nth-child(3) {
-  background-image: url(/images/haveng.jpg);
+  background-image: url(/images/horis2.jpg);
   grid-area: article-three;
-  color: #f2f2f2;
 }
 
 .article-archive {
@@ -420,6 +429,11 @@ input[type=submit]:hover {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 2em;
+}
+
+.container_cart {
+  border-radius: 5px;
+  background-color: #f2f2f2;
 }
 
 #subject {
@@ -548,6 +562,11 @@ nav a,
     display: none;
   }
 
+  .hrmobile {
+    display: flex;
+    margin-top: 0;
+  }
+
   .hamburger-label {
     padding-bottom: 1.5em;
   }
@@ -574,7 +593,6 @@ nav a,
     grid-template-areas: "article-one" "article-two" "article-three" "archive";
     grid-template-columns: 1fr;
     gap: 0.5em;
-    padding: 0.5em 0em 0.5em 0em;
   }
 
   .aboutwrapper {
@@ -674,7 +692,6 @@ nav a,
   .jacketdetailwrapper {
     grid-template-areas: "jacketdetailimage jacketdetailbuy" "jacketdesc jacketdesc" ;
     grid-template-columns: 1fr 1fr;
-    padding-top: 1em;
   }
 
 }
