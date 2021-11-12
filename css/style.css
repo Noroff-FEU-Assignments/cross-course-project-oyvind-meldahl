@@ -118,9 +118,9 @@ main {
 .cartwrapper {
   display: grid;
   grid-area: wrapper;
-  grid-template-areas:  "cart-top cart-top" "cart-topleft cart-topright" "cart-left cart-right" "cart-bottom cart-bottom";
+  grid-template-areas:  "cart-top cart-top" "cart-topleft cart-topright" "cart-bottom cart-bottom";
   grid-template-rows: auto auto auto 1fr;
-  grid-template-columns:  1fr 1fr;
+  grid-template-columns:  2fr 1fr;
 }
 
 .cartwrapper h1, .cartwrapper h2, .cartwrapper h3 {
@@ -134,6 +134,16 @@ main {
   grid-template-columns: 2fr 1fr;
 }
 
+.alignleft {
+  float: left;
+  padding-left: 1em;
+}
+
+.alignright {
+  float: right;
+  padding-right: 1em;
+  font-weight: bold;
+}
 
 .cart-top {
   grid-area: cart-top;
@@ -149,7 +159,7 @@ main {
   margin-bottom: 1em;
  }
  
-.cart-topleft h1, .cart-topright h2, .cart-left h2, .cart-right h2, .cart-bottom h3 {
+.cartwrapper h1, .cartwrapper h2, .cartwrapper h3 {
   background-color: #262626;
   color: #f2f2f2;
   padding-top: 0.5em;
@@ -160,7 +170,6 @@ main {
 
   .cart-topright {
   grid-area: cart-topright;
- 
   margin-right: 7.5em;
   margin-bottom: 1em;
  }
@@ -168,13 +177,6 @@ main {
  .cart-left {
   grid-area: cart-left;
   margin-left: 7.5em;
-  margin-right: 1em;
-  
-  margin-bottom: 1em;
- }
-
- .cart-right {
-  grid-area: cart-right;
   margin-right: 7.5em;
   
   margin-bottom: 1em;
@@ -202,8 +204,15 @@ main {
 
  .cartimage {
    max-width: 150px;
+   float: left;
  }
 
+ .carttext {
+   padding-top: 3.5em;
+   padding-left: 7.5em;
+   font-weight: bold;
+   font-size: 1.5em;
+ }
 
 
 .jacketdetail:nth-child(1) {
@@ -404,6 +413,10 @@ input[type=submit]:hover {
   height: 200px;
 }
 
+#subjectcart {
+  height: 100px;
+}
+
 .alignleft {
   text-align: left;
 }
@@ -556,9 +569,15 @@ nav a,
     grid-template-columns: 1fr;
   }
 
-  .cart-topleft {
-    margin-top: -5em;
-  }
+ .cart-topleft {
+   padding-top: 1em;
+ }
+
+ .carttext {
+  padding-top: 5em;
+  padding-left: 8em;
+  font-size: 1.2em;
+}
 
 }
 
@@ -576,20 +595,21 @@ nav a,
   .cartwrapper {
     display: grid;
     grid-area: wrapper;
-    grid-template-areas:  "cart-top" "cart-topleft" "cart-topright" "cart-left" "cart-right" "cart-bottom";
+    grid-template-areas:  "cart-top" "cart-topleft" "cart-topright" "cart-bottom";
     grid-template-rows: auto auto auto auto auto auto;
     grid-template-columns:  1fr;
-
   }
 
-.cart-topleft, .cart-left, .cart-right, .cart-topright, .cart-bottom {
+.cart-topleft, .cart-topright, .cart-bottom {
   margin-left: 2em;
   margin-right: 2em;
 }
 
+
+
 .cart-top {
   padding-top: 3em;
-  padding-bottom: 1em;
+  padding-bottom: 2em;
  }
 
   nav a,
