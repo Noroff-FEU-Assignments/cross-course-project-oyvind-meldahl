@@ -10,12 +10,98 @@ body {
   grid-template-rows: auto 1fr auto;
 }
 
-h1 {
-  font-size: 2em;
-  font-family: "Playfair Display", sans-serif;
+header {
+  grid-area: header;
+  font-family: "Playfair Display", serif;
 }
 
-h2 {
+main {
+  display: grid;
+  grid-area: main;
+  grid-template-areas: "wrapper";
+}
+
+footer {
+  grid-area: footer;
+  padding: 0.5em;
+}
+
+header,
+footer {
+  background-color: #262626;
+  color: #f2f2f2;
+}
+
+.logo {
+  max-width: 250px;
+  padding: 2em 0em 2em 2em;
+  float: left;
+}
+
+header a {
+  color: #f2f2f2;
+  text-decoration: none;
+}
+
+.socialweb {
+  text-align: right;
+  padding: 1em 1em 0 0;
+  font-size: 1.5em;
+}
+
+.socialweb a:hover {
+  text-decoration: none;
+}
+
+header ul li {
+  list-style: none;
+  display: inline;
+}
+
+nav {
+  text-align: right;
+  padding: 1.5em 1em 0em;
+  font-size: 1.25em;
+}
+
+nav a,
+.socialweb a {
+  padding: 0.5em;
+}
+
+.active {
+  background-color: #848c5a;
+  border-radius: 25px;
+}
+
+.jacketsizing {
+  font-size: 1.2em;
+  width: 75%;
+}
+
+.ctabutton {
+  background-color: #b70d0d;
+  color: #f2f2f2;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 0.5em;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.ctabutton:hover {
+  color: #262626;
+  background-color: #848c5a;
+  text-decoration: none;
+}
+
+
+
+
+h1, h2 {
   font-size: 2em;
   font-family: "Playfair Display", sans-serif;
 }
@@ -31,6 +117,18 @@ h3 {
 
 .contactwrapper h2 {
   margin-top: 1.75em;
+}
+
+.cartwrapper h1, .cartwrapper h2, .cartwrapper h3, .cartpaysucwrapper h1 {
+  font-size: 1.2em;
+}
+
+.cartwrapper h1, .cartwrapper h2, .cartwrapper h3, .cartpaysucwrapper h1 {
+  background-color: #262626;
+  color: #f2f2f2;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 0.5em;
 }
 
 p {
@@ -55,17 +153,6 @@ a:hover {
 .team {
   max-width: 200px;
   padding-bottom: 0.5em;
-}
-
-header {
-  grid-area: header;
-  font-family: "Playfair Display", serif;
-}
-
-main {
-  display: grid;
-  grid-area: main;
-  grid-template-areas: "wrapper";
 }
 
 .mainwrapper {
@@ -125,25 +212,16 @@ main {
 }
 
 
-.cartwrapper {
+.cartwrapper, .cartpaysucwrapper {
   display: grid;
   grid-area: wrapper;
   grid-template-areas:  "cart-top cart-top" "cart-topleft cart-topright" "cart-bottom cart-bottom";
-  grid-template-rows: auto auto auto 1fr;
+  grid-template-rows: auto auto 1fr;
   grid-template-columns:  2fr 1fr;
 }
 
-.cartpaysucwrapper {
-  display: grid;
-  grid-area: wrapper;
-  grid-template-areas:  "cart-top cart-top" "cart-topleft cart-topright" "cart-bottom cart-bottom";
-  grid-template-rows: auto auto auto 1fr;
-  grid-template-columns:  2fr 1fr;
-}
 
-.cartwrapper h1, .cartwrapper h2, .cartwrapper h3, .cartpaysucwrapper h1 {
-  font-size: 1.2em;
-}
+
 
 .contactwrapper {
   display: grid;
@@ -163,52 +241,33 @@ main {
   font-weight: bold;
 }
 
+.centerflex {
+  display: flex;
+  justify-content: space-around;
+}
+
 .hrmobile {
   display: none;
 }
 
 .cart-top {
   grid-area: cart-top;
-  padding-top: 3em;
-  padding-bottom: 3em;
+  padding: 3em 0em;
  }
 
- .cart-topleft {
+.cart-topleft {
   grid-area: cart-topleft;
-  
-  margin-left: 7.5em;
-  margin-right: 1em;
-  margin-bottom: 1em;
+  margin: 0em 1em 1em 7.5em;
  }
  
-.cartwrapper h1, .cartwrapper h2, .cartwrapper h3, .cartpaysucwrapper h1 {
-  background-color: #262626;
-  color: #f2f2f2;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
-  padding-left: 0.5em;
-}
-
-  .cart-topright {
+.cart-topright {
   grid-area: cart-topright;
-  margin-right: 7.5em;
-  margin-bottom: 1em;
- }
-
- .cart-left {
-  grid-area: cart-left;
-  margin-left: 7.5em;
-  margin-right: 7.5em;
-  
-  margin-bottom: 1em;
+  margin: 0em 7.5em 1em 0em;
  }
 
  .cart-bottom {
   grid-area: cart-bottom;
-  margin-left: 7.5em;
-  margin-right: 7.5em;
-  
-  margin-bottom: 1em;
+  margin: 0em 7.5em 3em 7.5em;
  }
 
  .cart-top-box {
@@ -226,22 +285,20 @@ main {
  .cartimage {
    max-width: 150px;
    float: left;
-   padding-left: 1em;
-   padding-right: 1em;
+   padding: 0em 1em;
  }
 
  .carttext {
    padding-top: 3.5em;
    font-size: 1.5em;
    display: flex;
-  
    text-align: center;
  }
 
 
 .jacketdetail:nth-child(1) {
-  display: flex;
   grid-area: jacketdetailimage;
+  display: flex;
   align-items: center;
   justify-content: center;
   padding-top: 1em;
@@ -256,13 +313,20 @@ main {
   padding-top: 2em;
 }
 
+.jacketimage {
+  max-width: 100%;
+  max-height: 450px;
+  min-height: 450px;
+}
+
+
 .jackets-section:nth-child(1) {
   grid-area: jackets-section-top;
  }
   
  .jackets-section:nth-child(2) {
    grid-area: jackets-section-one;
- text-align: center;
+   text-align: center;
  }
  
  .jackets-section:nth-child(3) {
@@ -290,11 +354,7 @@ main {
     text-align: center;
    }
 
-.jacketimage {
-  max-width: 100%;
-  max-height: 450px;
-  min-height: 450px;
-}
+
 
 .main-section:nth-child(1) {
   background-image: url(/images/horisont.jpg);
@@ -350,10 +410,6 @@ main {
  grid-area: about-team;
 }
 
-.team-member {
-  text-align: center;
-}
-
 .explore-section:nth-child(1) {
  grid-area: explore-section-top;
 }
@@ -394,10 +450,7 @@ main {
   padding-bottom: 1em;
 }
 
-.flexaround {
-  display: flex;
-  justify-content: space-around;
-}
+
 
 input[type=text], select, textarea {
   width: 100%;
@@ -428,12 +481,7 @@ input[type=submit]:hover {
 .container {
   border-radius: 5px;
   background-color: #f2f2f2;
-  padding: 2em;
-}
-
-.container_cart {
-  border-radius: 5px;
-  background-color: #f2f2f2;
+  padding: 1em;
 }
 
 #subject {
@@ -444,90 +492,11 @@ input[type=submit]:hover {
   height: 100px;
 }
 
-.alignleft {
-  text-align: left;
-}
-
-footer {
-  grid-area: footer;
-  padding: 0.5em;
-}
-
-header,
-footer {
-  background-color: #262626;
-  color: #f2f2f2;
-}
-
-.logo {
-  max-width: 250px;
-  padding: 2em 0em 2em 2em;
-  float: left;
-}
-
-header a {
-  color: #f2f2f2;
-  text-decoration: none;
-}
-
-.socialweb {
-  text-align: right;
-  padding: 1em 1em 0 0;
-  font-size: 1.5em;
-}
-
-.socialweb a:hover {
-  text-decoration: none;
-}
-
-header ul li {
-  list-style: none;
-  display: inline;
-}
-
-nav {
-  text-align: right;
-  padding: 1.5em 1em 0em;
-  font-size: 1.25em;
-}
-
-nav a,
-.socialweb a {
-  padding: 0.5em;
-}
-
-.active {
-  background-color: #848c5a;
-  border-radius: 25px;
-}
-
-#sizing {
-  font-size: 1.2em;
-  width: 75%;
-}
-
-.ctabuttonfront {
-  background-color: #b70d0d;
-  color: #f2f2f2;
-  border: none;
+.team-member {
   text-align: center;
-  text-decoration: none;
-  border-radius: 10px;
-  padding: 0.5em;
-  font-size: 1em;
-  font-weight: bold;
-  cursor: pointer;
 }
 
-.ctabuttonfront:hover {
-  color: #262626;
-  background-color: #848c5a;
-  text-decoration: none;
-}
 
-.socialmobile {
-  display: none;
-}
 
 /* MOBILE MENU */
 
@@ -551,6 +520,12 @@ nav a,
 #hamburger-menu {
   display: none;
 }
+
+.socialmobile {
+  display: none;
+}
+
+/* MEDIA QUERIES */
 
 @media (max-width: 767px) {
   .logo {
@@ -581,24 +556,24 @@ nav a,
 
   .jacketswrapper {
     grid-template-areas: "jackets-section-top" "jackets-section-one" "jackets-section-two" "jackets-section-three" "jackets-section-four" "jackets-section-five" "jackets-section-six";
-    grid-template-columns: 1fr;
   }
 
   .jacketdetailwrapper {
     grid-template-areas:  "jacketdetailimage" "jacketdetailbuy" "jacketdesc";
-    grid-template-columns: 1fr;
   }
 
   .articleswrapper {
     grid-template-areas: "article-one" "article-two" "article-three" "archive";
-    grid-template-columns: 1fr;
     gap: 0.5em;
   }
 
   .aboutwrapper {
     grid-template-areas: "about-section-one" "about-section-two" "about-team";
-    grid-template-columns: 1fr;
   }
+
+.jacketswrapper, .jacketdetailwrapper, .articleswrapper, .aboutwrapper, .contactwrapper {
+  grid-template-columns: 1fr;
+}
 
  .cart-topleft {
    padding-top: 1em;
@@ -611,14 +586,8 @@ nav a,
 }
 
 .contactwrapper {
-  display: grid;
-  grid-area: wrapper;
   grid-template-areas: "about-section-one" "about-section-two";
-  grid-template-columns: 1fr;
 }
-
-
-
 }
 
 @media (max-width: 980px) {
@@ -641,11 +610,9 @@ nav a,
   }
 
 .cart-topleft, .cart-topright, .cart-bottom {
-  margin-left: 2em;
-  margin-right: 2em;
+  margin-left: 1em;
+  margin-right: 1em;
 }
-
-
 
 .cart-top {
   padding-top: 3em;
