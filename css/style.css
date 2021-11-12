@@ -434,7 +434,7 @@ a:hover {
 }
 
 .article:nth-child(2) {
-  background-image: url(/images/horis4.jpg);
+  background-image: url(/images/stars.jpg);
   grid-area: article-two;
   color: #f2f2f2;
 }
