@@ -571,6 +571,10 @@ input[type=submit]:hover {
     grid-template-areas: "about-section-one" "about-section-two" "about-team";
   }
 
+  .about-section-2 {
+    display: none;
+  }
+
 .jacketswrapper, .jacketdetailwrapper, .articleswrapper, .aboutwrapper, .contactwrapper {
   grid-template-columns: 1fr;
 }
