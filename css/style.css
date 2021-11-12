@@ -11,11 +11,18 @@ body {
 }
 
 h1 {
-  font-size: 3em;
+  font-size: 2em;
+  font-family: "Playfair Display", sans-serif;
 }
 
 h2 {
   font-size: 2em;
+  font-family: "Playfair Display", sans-serif;
+}
+
+h3 {
+  font-size: 1.5;
+  font-family: "Playfair Display", sans-serif;
 }
 
 .aboutwrapper h2, .aboutwrapper h3 {
@@ -73,7 +80,7 @@ main {
   grid-area: wrapper;
   grid-template-areas: "about-section-one about-section-two" "about-team about-team";
   grid-template-columns: 2fr 1fr;
-  grid-template-rows: 1fr auto;
+  grid-template-rows: auto auto;
 }
 
 .articleswrapper {
@@ -106,6 +113,7 @@ main {
   grid-template-areas: "jackets-section-top jackets-section-top jackets-section-top" "jackets-section-one jackets-section-two jackets-section-three" "jackets-section-four jackets-section-five jackets-section-six";
   grid-template-rows: auto auto auto;
   grid-template-columns: 1fr 1fr 1fr;
+  font-weight: bold;
 }
 
 .jacketdetailwrapper {
@@ -274,7 +282,8 @@ main {
 
 .jacketimage {
   max-width: 100%;
-  max-height: 500px;
+  max-height: 450px;
+  min-height: 450px;
 }
 
 .main-section:nth-child(1) {
@@ -374,12 +383,6 @@ main {
   background: #f2f2f2;
   grid-area: archive;
   padding-bottom: 1em;
-}
-
-
-.flexevenly {
-  display: flex;
-  justify-content: space-evenly;
 }
 
 .flexaround {
@@ -588,6 +591,15 @@ nav a,
   font-size: 1.2em;
   font-weight: normal;
 }
+
+.contactwrapper {
+  display: grid;
+  grid-area: wrapper;
+  grid-template-areas: "about-section-one" "about-section-two";
+  grid-template-columns: 1fr;
+}
+
+
 
 }
 
