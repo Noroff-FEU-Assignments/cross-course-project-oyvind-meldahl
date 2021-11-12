@@ -104,7 +104,7 @@ main {
   display: grid;
   grid-area: wrapper;
   grid-template-areas: "jackets-section-top jackets-section-top jackets-section-top" "jackets-section-one jackets-section-two jackets-section-three" "jackets-section-four jackets-section-five jackets-section-six";
-  grid-template-rows: auto 1fr 1fr;
+  grid-template-rows: auto auto auto;
   grid-template-columns: 1fr 1fr 1fr;
 }
 
@@ -112,7 +112,7 @@ main {
   display: grid;
   grid-area: wrapper;
   grid-template-areas: "jacketdetailimage jacketdetailbuy" "jacketdesc jacketdesc";
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: auto auto;
 }
 
 .cartwrapper {
