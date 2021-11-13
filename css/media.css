@@ -1,0 +1,150 @@
+@media (max-width: 767px) {
+  .logo {
+    padding: 1em 0em 1em 2em;
+    max-width: 150px;
+  }
+
+  .h2-archive {
+    display: none;
+  }
+
+  .hrmobile {
+    display: flex;
+    margin-top: 0;
+  }
+
+  .hamburger-label {
+    padding-bottom: 1.5em;
+  }
+
+  .socialweb {
+    display: none;
+  }
+
+  .cart-topleft {
+    padding-top: 1em;
+  }
+
+  .carttext {
+    padding-top: 5em;
+    font-size: 1.2em;
+    font-weight: normal;
+  }
+
+  .cart-top {
+    display: none;
+  }
+
+  .jacketswrapper {
+    grid-template-areas: "jackets-section-top" "jackets-section-one" "jackets-section-two" "jackets-section-three" "jackets-section-four" "jackets-section-five" "jackets-section-six";
+  }
+
+  .jacketdetailwrapper {
+    grid-template-areas: "jacketdetailimage" "jacketdetailbuy" "jacketdesc";
+  }
+
+  .articleswrapper {
+    grid-template-areas: "article-one" "article-two" "article-three" "archive";
+    gap: 0.5em;
+  }
+
+  .aboutwrapper {
+    grid-template-areas: "about-section-one" "about-section-two" "about-team";
+  }
+
+  .about-section-2 {
+    display: none;
+  }
+
+  .jacketswrapper,
+  .jacketdetailwrapper,
+  .articleswrapper,
+  .aboutwrapper,
+  .contactwrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .contactwrapper {
+    grid-template-areas: "about-section-one" "about-section-two";
+  }
+}
+
+@media (max-width: 980px) {
+  .cart-topleft,
+  .cart-topright,
+  .cart-bottom {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  .cart-top {
+    padding-top: 3em;
+    padding-bottom: 2em;
+  }
+
+  nav a,
+  .hamburger-label {
+    display: block;
+  }
+
+  .socialmobile {
+    padding-top: 0.5em;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.5em;
+  }
+
+  nav {
+    display: none;
+  }
+
+  nav ul {
+    text-align: center;
+    padding: 0em 1em 0em 1em;
+  }
+
+  .mainwrapper {
+    grid-template-areas: "main-section-one" "main-section-two" "main-section-three" "main-section-four" "main-section-five";
+  }
+
+  .explorewrapper {
+    grid-template-areas: "explore-section-one" "explore-section-two" "explore-section-top";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr auto;
+  }
+
+  .cartwrapper {
+    display: grid;
+    grid-area: wrapper;
+    grid-template-areas: "cart-top" "cart-topleft" "cart-topright" "cart-bottom";
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 980px) {
+  .hamburger-label {
+    padding-top: 3em;
+  }
+
+  .socialmobile {
+    display: none;
+  }
+
+  .jacketswrapper {
+    grid-template-areas: "jackets-section-top jackets-section-top" "jackets-section-one jackets-section-two" "jackets-section-three jackets-section-four" "jackets-section-five jackets-section-six";
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .jacketdetailwrapper {
+    grid-template-areas: "jacketdetailimage jacketdetailbuy" "jacketdesc jacketdesc";
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 768px) {
+  .teamjustify {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}

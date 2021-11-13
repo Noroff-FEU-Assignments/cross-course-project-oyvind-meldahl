@@ -1,0 +1,230 @@
+.mainwrapper {
+  display: grid;
+  grid-area: wrapper;
+  grid-template-areas: "main-section-one main-section-one main-section-one" "main-section-two main-section-two main-section-two" "main-section-three main-section-four main-section-five";
+  gap: 0.5em;
+}
+
+.aboutwrapper {
+  display: grid;
+  grid-area: wrapper;
+  grid-template-areas: "about-section-one about-section-two" "about-team about-team";
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto auto;
+}
+
+.articleswrapper {
+  display: grid;
+  grid-area: wrapper;
+  grid-template-areas: "article-one archive" "article-two archive" "article-three archive";
+  grid-template-columns: 2fr 1fr;
+  gap: 0.5em;
+}
+
+.contactwrapper {
+  display: grid;
+  grid-area: wrapper;
+  grid-template-areas: "about-section-one about-section-two" "about-section-one about-section-two";
+  grid-template-columns: 2fr 1fr;
+}
+
+.explorewrapper {
+  display: grid;
+  grid-area: wrapper;
+  grid-template-areas: "explore-section-top explore-section-top" "explore-section-one explore-section-two";
+  grid-template-rows: auto 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5em;
+}
+
+.jacketswrapper {
+  display: grid;
+  grid-area: wrapper;
+  grid-template-areas: "jackets-section-top jackets-section-top jackets-section-top" "jackets-section-one jackets-section-two jackets-section-three" "jackets-section-four jackets-section-five jackets-section-six";
+  grid-template-rows: auto auto auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-weight: bold;
+}
+
+.jacketdetailwrapper {
+  display: grid;
+  grid-area: wrapper;
+  grid-template-areas: "jacketdetailimage jacketdetailbuy" "jacketdesc jacketdesc";
+  grid-template-columns: auto auto;
+  grid-template-rows: auto 1fr;
+}
+
+.cartwrapper {
+  display: grid;
+  grid-area: wrapper;
+  grid-template-areas: "cart-top cart-top" "cart-topleft cart-topright" "cart-bottom cart-bottom";
+  grid-template-rows: auto auto 1fr;
+  grid-template-columns: 2fr 1fr;
+}
+
+.cartpaysucwrapper {
+  display: grid;
+  grid-area: wrapper;
+  grid-template-areas: "cart-top cart-top" "cart-topleft cart-topright" "cart-bottom cart-bottom";
+  grid-template-rows: auto auto 1fr;
+  grid-template-columns: 2fr 1fr;
+}
+
+.cartpaysucwrapper .cart-top {
+  display: none;
+}
+
+.contactwrapper {
+  display: grid;
+  grid-area: wrapper;
+  grid-template-areas: "about-section-one about-section-two";
+  grid-template-columns: 2fr 1fr;
+}
+
+.cart-top {
+  grid-area: cart-top;
+  padding: 3em 0em;
+}
+
+.cart-topleft {
+  grid-area: cart-topleft;
+  margin: 0em 1em 1em 7.5em;
+}
+
+.cart-topright {
+  grid-area: cart-topright;
+  margin: 0em 7.5em 1em 0em;
+}
+
+.cart-bottom {
+  grid-area: cart-bottom;
+  margin: 0em 7.5em 3em 7.5em;
+}
+
+.jacketdetail:nth-child(1) {
+  grid-area: jacketdetailimage;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2em;
+}
+.jacketdetail:nth-child(2) {
+  grid-area: jacketdetailbuy;
+}
+
+.jacketdetail:nth-child(3) {
+  grid-area: jacketdesc;
+  padding-top: 2em;
+}
+
+.jackets-section:nth-child(1) {
+  grid-area: jackets-section-top;
+}
+
+.jackets-section:nth-child(2) {
+  grid-area: jackets-section-one;
+  text-align: center;
+}
+
+.jackets-section:nth-child(3) {
+  grid-area: jackets-section-two;
+  text-align: center;
+}
+
+.jackets-section:nth-child(4) {
+  grid-area: jackets-section-three;
+  text-align: center;
+}
+
+.jackets-section:nth-child(5) {
+  grid-area: jackets-section-four;
+  text-align: center;
+}
+
+.jackets-section:nth-child(6) {
+  grid-area: jackets-section-five;
+  text-align: center;
+}
+
+.jackets-section:nth-child(7) {
+  grid-area: jackets-section-six;
+  text-align: center;
+}
+
+.main-section:nth-child(1) {
+  background-image: url(/images/horisont.jpg);
+  grid-area: main-section-one;
+}
+
+.main-section:nth-child(2) {
+  background-image: url(/images/solnedgang.jpg);
+  grid-area: main-section-two;
+}
+
+.main-section:nth-child(3) {
+  background-image: url(/images/fjell2.jpg);
+  grid-area: main-section-three;
+  color: #f2f2f2;
+}
+
+.main-section:nth-child(4) {
+  background-image: url(/images/white.jpg);
+  grid-area: main-section-four;
+}
+
+.main-section:nth-child(5) {
+  background-image: url(/images/pasteller.jpg);
+  grid-area: main-section-five;
+}
+
+.about-section:nth-child(1) {
+  grid-area: about-section-one;
+}
+
+.about-section:nth-child(2) {
+  grid-area: about-section-two;
+}
+
+.about-team {
+  grid-area: about-team;
+}
+
+.explore-section:nth-child(1) {
+  grid-area: explore-section-top;
+}
+
+.explore-section:nth-child(2) {
+  grid-area: explore-section-one;
+  background-image: url(/images/men3.jpg);
+  color: #f2f2f2;
+  background-position: 50% 25%;
+}
+
+.explore-section:nth-child(3) {
+  grid-area: explore-section-two;
+  background-image: url(/images/women.jpg);
+  color: #f2f2f2;
+  background-position: 50% 25%;
+}
+
+.article:nth-child(1) {
+  background-image: url(/images/horis.jpg);
+  grid-area: article-one;
+}
+
+.article:nth-child(2) {
+  background-image: url(/images/stars.jpg);
+  grid-area: article-two;
+  color: #f2f2f2;
+}
+
+.article:nth-child(3) {
+  background-image: url(/images/white.jpg);
+  grid-area: article-three;
+}
+
+.article-archive {
+  background: #f2f2f2;
+  grid-area: archive;
+  padding-bottom: 1em;
+}
