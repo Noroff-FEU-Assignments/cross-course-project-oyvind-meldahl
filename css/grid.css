@@ -1,8 +1,15 @@
+.center {
+  margin: 0 auto;
+  max-width: 1920px;
+  width: 100%;
+}
+
 .mainwrapper {
   display: grid;
   grid-area: wrapper;
   grid-template-areas: "main-section-one main-section-one main-section-one" "main-section-two main-section-two main-section-two" "main-section-three main-section-four main-section-five";
   gap: 0.5em;
+  grid-template-rows: auto;
 }
 
 .aboutwrapper {
