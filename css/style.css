@@ -5,6 +5,7 @@ body {
   display: grid;
   grid-template-areas: "header" "main" "footer";
   grid-template-rows: auto 1fr auto;
+  background-color: #f2f2f2;
 }
 
 header {
@@ -22,7 +23,6 @@ main {
   display: grid;
   grid-area: main;
   grid-template-areas: "wrapper";
-  background-color: #f2f2f2;
 }
 
 footer {
