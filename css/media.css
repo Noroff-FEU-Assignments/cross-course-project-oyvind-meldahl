@@ -8,6 +8,10 @@
     display: none;
   }
 
+  .polaroid {
+    max-width: 90%;
+  }
+
   .hrmobile {
     display: flex;
     margin-top: 0;
