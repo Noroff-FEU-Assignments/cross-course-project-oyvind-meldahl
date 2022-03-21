@@ -9,7 +9,8 @@
   }
 
   .polaroid {
-    max-width: 100%;
+    max-width: 40%;
+    padding: 0em;
   }
 
   .hrmobile {
@@ -87,10 +88,6 @@
 
   .break-flex {
     display: none;
-  }
-
-  .polaroid {
-    max-width: 30%;
   }
 
   .cart-top {
