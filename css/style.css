@@ -5,12 +5,16 @@ body {
   display: grid;
   grid-template-areas: "header" "main" "footer";
   grid-template-rows: auto 1fr auto;
-  background-color: #f2f2f2;
+  background-image: url(/images/ivana-cajina-AROeBX7UNx4-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 header {
   grid-area: header;
   font-family: "Playfair Display", serif;
+  margin-bottom: 1em;
 }
 
 .max-width-container {
@@ -28,6 +32,7 @@ main {
 footer {
   grid-area: footer;
   padding: 0.5em;
+  margin-top: 1em;
 }
 
 header,
@@ -91,7 +96,7 @@ nav a,
   text-decoration: none;
   border-radius: 10px;
   padding: 0.5em;
-  font-size: 1em;
+  font-size: 1rem;
   font-weight: bold;
   cursor: pointer;
 }
@@ -187,6 +192,8 @@ a:hover {
   font-size: 2em;
   font-weight: bold;
   background-color: #cacaca;
+  border: solid black;
+  border-width: 1px;
 }
 
 .cartimage {
@@ -219,10 +226,13 @@ a:hover {
 }
 
 .article-content {
-  max-width: 750px;
+  max-width: 900px;
   padding: 1em 1em;
-  margin: 0;
+
   margin: auto;
+  background-color: #f2f2f2;
+  border: solid black;
+  border-width: 1px;
 }
 
 .main-section,
@@ -314,4 +324,39 @@ input[type="submit"]:hover {
 
 .socialmobile {
   display: none;
+}
+
+.polaroid {
+  max-width: 20%;
+  background-color: white;
+  border: solid black;
+  border-width: 1px;
+  margin-bottom: 25px;
+  padding: 1em;
+}
+
+.testcontainer {
+  text-align: center;
+  padding: 10px 20px;
+}
+
+.jacket-picture {
+  width: 100%;
+  max-height: 500px;
+}
+
+.flexbilder {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1920px;
+  justify-content: space-evenly;
+}
+
+.break-flex {
+  flex-basis: 100%;
+  height: 0;
+}
+
+.title_padding {
+  padding-left: 0.5em;
 }
