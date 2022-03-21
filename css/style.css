@@ -333,6 +333,7 @@ input[type="submit"]:hover {
   border-width: 1px;
   margin-bottom: 25px;
   padding: 1em;
+  margin-right: 1em;
 }
 
 .testcontainer {
