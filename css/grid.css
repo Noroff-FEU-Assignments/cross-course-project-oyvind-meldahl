@@ -65,7 +65,7 @@
   display: grid;
   grid-area: wrapper;
   grid-template-areas: "jacketdetailimage jacketdetailbuy" "jacketdesc jacketdesc";
-  grid-template-columns: auto auto;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: auto 1fr;
   margin: 0em 1em;
   gap: 1em;
