@@ -78,18 +78,40 @@
             possible and we usually respond back within 2 days.
           </p>
           <div class="container">
-            <form action="contactsuccess.html">
-              <label for="fname">First Name</label>
-              <input type="text" id="fname" name="firstname" placeholder="Your name.." />
-              <label for="lname">Last Name</label>
-              <input type="text" id="lname" name="lastname" placeholder="Your last name.." />
-              <label for="email">Email</label>
-              <input type="text" id="email" name="email" placeholder="Your email-adresse.." />
-              <label for="subjectcontact">Your message</label>
-              <textarea id="subjectcontact" name="subject" placeholder="Write something.."></textarea>
-              <input type="submit" value="Submit" />
+            <form id="contactform">
+              <div>
+                <label>
+                  Name (required)
+                  <input name="fullName" id="fullName" placeholder="Please enter your name" />
+                </label>
+                <div class="form_error" id="fullNameError">Please enter your name!</div>
+              </div>
+
+              <div>
+                <label>
+                  Email-adress (required)
+                  <input name="email" id="email" placeholder="Please enter your email-adress" />
+                </label>
+                <div class="form_error" id="emailError">Please enter a valid email-adress.</div>
+              </div>
+              <div>
+                <label>
+                  Subject (minimum 10 characters)
+                  <input name="subject" id="subject" placeholder="Please enter your subject" />
+                </label>
+                <div class="form_error" id="subjectError">The subject must be minimum 10 characters!</div>
+              </div>
+              <div>
+                <label>
+                  Message (minimum 25 characters)
+                  <textarea name="message" id="message" placeholder="Please type your message here." rows="10"></textarea>
+                </label>
+                <div class="form_error" id="messageError">Message must be at least 25 characters.</div>
+              </div>
+              <button id="button" class="ctabutton">Submit</button>
             </form>
           </div>
+          <div class="form_success"></div>
         </section>
         <section class="about-section-2">
           <h2>Adresses:</h2>
@@ -115,6 +137,7 @@
         </section>
       </div>
     </main>
+    <script src="js/contact.js"></script>
     <footer class="centerflex">&copy; Rainydays Jackets 2021</footer>
   </body>
 </html>

@@ -130,6 +130,7 @@
 
   .mainwrapper {
     grid-template-areas: "main-section-one" "main-section-three" "main-section-two" "main-section-four" "main-section-five";
+    grid-template-columns: 1fr;
   }
 
   .explorewrapper {

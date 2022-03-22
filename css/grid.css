@@ -10,6 +10,7 @@
   grid-template-areas: "main-section-one main-section-one main-section-one" "main-section-three main-section-three main-section-three" "main-section-two main-section-four main-section-five";
   gap: 1em;
   grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr 1fr;
   margin: 0em 1em;
 }
 

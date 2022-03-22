@@ -363,3 +363,38 @@ input[type="submit"]:hover {
 .title_padding {
   padding-left: 0.5em;
 }
+
+button {
+  background-color: red;
+  border: solid black;
+  border-width: 2px;
+  width: 150px;
+  cursor: pointer;
+  padding: 10px;
+  margin-top: 1em;
+  font-size: 1.5em;
+}
+
+input,
+textarea {
+  width: 98%;
+  margin-top: 2px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+label {
+  display: block;
+  margin-top: 1em;
+}
+
+.form_error {
+  display: none;
+  color: red;
+  margin-top: 2px;
+}
+
+.form_success {
+  font-size: 2em;
+  text-align: center;
+}
