@@ -8,6 +8,10 @@
     display: none;
   }
 
+  .ctabutton {
+    font-size: 0.8rem;
+  }
+
   .mobile_view_jacket {
     text-align: center;
   }
@@ -125,7 +129,7 @@
   }
 
   .mainwrapper {
-    grid-template-areas: "main-section-one" "main-section-two" "main-section-three" "main-section-four" "main-section-five";
+    grid-template-areas: "main-section-one" "main-section-three" "main-section-two" "main-section-four" "main-section-five";
   }
 
   .explorewrapper {
