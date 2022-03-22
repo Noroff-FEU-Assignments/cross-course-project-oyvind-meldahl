@@ -4,6 +4,14 @@
     max-width: 150px;
   }
 
+  .jacketdetail1 {
+    display: none;
+  }
+
+  .mobile_view_jacket {
+    text-align: center;
+  }
+
   .h2-archive {
     display: none;
   }
@@ -164,5 +172,9 @@
   .teamjustify {
     display: flex;
     justify-content: space-evenly;
+  }
+
+  .mobile_view_jacket {
+    display: none;
   }
 }

@@ -122,6 +122,7 @@
   margin: 0em 7.5em 3em 7.5em;
 }
 
+.jacketdetail1,
 .jacketdetail:nth-child(1) {
   grid-area: jacketdetailimage;
   display: flex;
