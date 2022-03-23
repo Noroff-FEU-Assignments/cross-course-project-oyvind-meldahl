@@ -1,14 +1,13 @@
 const form = document.querySelector("#contactform");
 const fullName = document.querySelector("#fullName");
 const fullNameError = document.querySelector("#fullNameError");
-const subject = document.querySelector("#subject");
-const subjectError = document.querySelector("#subjectError");
+const adress = document.querySelector("#adress");
+const adressError = document.querySelector("#adressError");
 const email = document.querySelector("#email");
 const emailError = document.querySelector("#emailError");
 const message = document.querySelector("#message");
 const messageError = document.querySelector("#messageError");
 const formSuccess = document.querySelector(".form_success");
-const hideForm = document.querySelector("#contactform");
 
 function validateForm() {
   event.preventDefault();
@@ -19,10 +18,10 @@ function validateForm() {
     fullNameError.style.display = "block";
   }
 
-  if (checkLength(subject.value, 9)) {
-    subjectError.style.display = "none";
+  if (checkLength(adress.value, 9)) {
+    adressError.style.display = "none";
   } else {
-    subjectError.style.display = "block";
+    adressError.style.display = "block";
   }
 
   if (checkEmail(email.value)) {
@@ -31,16 +30,8 @@ function validateForm() {
     emailError.style.display = "block";
   }
 
-  if (checkLength(message.value, 0)) {
-    messageError.style.display = "none";
-  } else {
-    messageError.style.display = "block";
-  }
-
-  if (checkLength(fullName.value, 0) && checkLength(subject.value, 9) && checkEmail(email.value) && checkLength(message.value, 0)) {
-    formSuccess.innerHTML = "<p>Your message has been sent, thank you.</p>";
-    hideForm.innerHTML = "";
-    form.reset();
+  if (checkLength(fullName.value, 0) && checkLength(adress.value, 9) && checkEmail(email.value)) {
+    window.location.href = "cartpayment.html";
   }
 }
 

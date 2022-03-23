@@ -27,7 +27,7 @@
 .articleswrapper {
   display: grid;
   grid-area: wrapper;
-  grid-template-areas: "article-one archive" "article-two archive" "article-three archive";
+  grid-template-areas: "article-one archive-one" "article-two archive-two" "article-three archive-three";
   grid-template-columns: 2fr 1fr;
   gap: 1em;
   margin: 0em 1em;
@@ -275,9 +275,31 @@
   grid-area: article-three;
 }
 
-.article-archive {
-  grid-area: archive;
+.article-archive:nth-child(1) {
+  grid-area: archive-one;
   padding-bottom: 1em;
+  background-color: #f2f2f2;
+  border: solid black;
+  border-width: 1px;
+}
+
+.article-archive:nth-child(2) {
+  grid-area: archive-two;
+  padding-bottom: 1em;
+  background-color: #f2f2f2;
+  border: solid black;
+  border-width: 1px;
+}
+
+.article-archive:nth-child(3) {
+  grid-area: archive-three;
+  padding-bottom: 1em;
+  background-color: #f2f2f2;
+  border: solid black;
+  border-width: 1px;
+}
+
+.article-archive {
   background-color: #f2f2f2;
   border: solid black;
   border-width: 1px;

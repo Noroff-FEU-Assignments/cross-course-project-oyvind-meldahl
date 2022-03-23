@@ -4,6 +4,14 @@
     max-width: 150px;
   }
 
+  input,
+  textarea {
+    width: 100%;
+    margin-top: 2px;
+    padding: 10px;
+    font-size: 16px;
+  }
+
   .jacketdetail1 {
     display: none;
   }
@@ -23,6 +31,10 @@
   .polaroid {
     max-width: 40%;
     padding: 0em;
+  }
+
+  .testcontainer {
+    font-size: 0.9em;
   }
 
   .hamburger-label {
@@ -60,7 +72,8 @@
   }
 
   .articleswrapper {
-    grid-template-areas: "article-one" "article-two" "article-three" "archive";
+    grid-template-areas: "article-one" "article-two" "article-three" "archive-one" "archive-two" "archive-three";
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 0.5em;
   }
 
