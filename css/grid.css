@@ -192,28 +192,28 @@
 }
 
 .main-section:nth-child(1) {
-  background-image: url(/images/horisont.jpg);
+  background-image: url(/images/mariah-krafft-g87PtqNlqOE-unsplash.jpg);
+
   grid-area: main-section-one;
 }
 
 .main-section:nth-child(2) {
-  background-image: url(/images/solnedgang.jpg);
+  background-image: url(/images/khamkhor--I-McziCxxM-unsplash.jpg);
   grid-area: main-section-two;
 }
 
 .main-section:nth-child(3) {
-  background-image: url(/images/fjell2.jpg);
+  background-image: url(/images/adrien-olichon-Wx7yL_9q0A8-unsplash.jpg);
   grid-area: main-section-three;
-  color: #f2f2f2;
 }
 
 .main-section:nth-child(4) {
-  background-image: url(/images/white.jpg);
+  background-image: url(/images/calum-flanagan-vvR6ApDqRcw-unsplash.jpg);
   grid-area: main-section-four;
 }
 
 .main-section:nth-child(5) {
-  background-image: url(/images/pasteller.jpg);
+  background-image: url(/images/nasim-dadfar-w28Ei0Ap96w-unsplash.jpg);
   grid-area: main-section-five;
 }
 
@@ -260,43 +260,18 @@
 }
 
 .article:nth-child(1) {
-  background-image: url(/images/horis.jpg);
+  background-image: url(/images/kalen-emsley-NrN5Rvl89Lo-unsplash.jpg);
   grid-area: article-one;
 }
 
 .article:nth-child(2) {
-  background-image: url(/images/stars.jpg);
+  background-image: url(/images/katie-mcbroom--Tvjzjcji2k-unsplash.jpg);
   grid-area: article-two;
-  color: #f2f2f2;
 }
 
 .article:nth-child(3) {
-  background-image: url(/images/white.jpg);
+  background-image: url(/images/mariah-krafft-g87PtqNlqOE-unsplash.jpg);
   grid-area: article-three;
-}
-
-.article-archive:nth-child(1) {
-  grid-area: archive-one;
-  padding-bottom: 1em;
-  background-color: #f2f2f2;
-  border: solid black;
-  border-width: 1px;
-}
-
-.article-archive:nth-child(2) {
-  grid-area: archive-two;
-  padding-bottom: 1em;
-  background-color: #f2f2f2;
-  border: solid black;
-  border-width: 1px;
-}
-
-.article-archive:nth-child(3) {
-  grid-area: archive-three;
-  padding-bottom: 1em;
-  background-color: #f2f2f2;
-  border: solid black;
-  border-width: 1px;
 }
 
 .article-archive {
