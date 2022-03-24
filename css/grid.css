@@ -192,13 +192,14 @@
 }
 
 .main-section:nth-child(1) {
-  background-image: url(/images/mariah-krafft-g87PtqNlqOE-unsplash.jpg);
+  background-image: url(/images/damefjell.jpg);
 
   grid-area: main-section-one;
 }
 
 .main-section:nth-child(2) {
   background-image: url(/images/khamkhor--I-McziCxxM-unsplash.jpg);
+  background-position: center;
   grid-area: main-section-two;
 }
 
