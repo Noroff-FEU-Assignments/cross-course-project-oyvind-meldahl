@@ -278,12 +278,13 @@
 }
 
 .article:nth-child(1) {
-  background-image: url(/images/kalen-emsley-NrN5Rvl89Lo-unsplash.jpg);
+  background-image: url(/images/jachan-devol-ksdTuDc1ibg-unsplash.jpg);
+  color: #f2f2f2;
   grid-area: article-one;
 }
 
 .article:nth-child(2) {
-  background-image: url(/images/katie-mcbroom--Tvjzjcji2k-unsplash.jpg);
+  background-image: url(/images/wladislaw-sokolowskij-0vw4InAC-yM-unsplash.jpg);
   grid-area: article-two;
 }
 
