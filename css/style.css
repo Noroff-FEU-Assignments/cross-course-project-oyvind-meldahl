@@ -118,6 +118,10 @@ h3 {
   font-family: "Playfair Display", sans-serif;
 }
 
+.bold {
+  font-weight: bold;
+}
+
 .aboutwrapper h3 {
   font-size: 1.75em;
 }
@@ -251,7 +255,9 @@ a:hover {
 .jackets-section,
 .jacketdetail,
 .about-team,
-.article-archive {
+.article-archive-one,
+.article-archive-two,
+.article-archive-three {
   padding: 0em 2em 0em 2em;
 }
 

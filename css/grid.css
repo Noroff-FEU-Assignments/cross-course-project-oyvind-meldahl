@@ -27,10 +27,12 @@
 .articleswrapper {
   display: grid;
   grid-area: wrapper;
-  grid-template-areas: "article-one archive-one" "article-two archive-two" "article-three archive-three";
-  grid-template-columns: 2fr 1fr;
+  grid-template-areas: "article-one" "article-two" "article-three";
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   gap: 1em;
-  margin: 0em 1em;
+  margin: 0em auto;
+  width: 75%;
 }
 
 .contactwrapper {
@@ -78,7 +80,9 @@
   grid-template-areas: "cart-top cart-top" "cart-topleft cart-topright" "cart-bottom cart-bottom";
   grid-template-rows: auto auto 1fr;
   grid-template-columns: 2fr 1fr;
-  margin: 0em 1em;
+  margin: 0em auto;
+  width: 95%;
+  gap: 1em;
 }
 
 .cartpaysucwrapper {
@@ -87,7 +91,7 @@
   grid-template-areas: "cart-top cart-top" "cart-topleft cart-topright" "cart-bottom cart-bottom";
   grid-template-rows: auto auto 1fr;
   grid-template-columns: 2fr 1fr;
-  margin: 0em 1em;
+  margin: 1em 1em;
 }
 
 .cartpaysucwrapper .cart-top {
@@ -103,6 +107,10 @@
   margin: 0em 1em;
 }
 
+.carttitle {
+  margin-top: -1.25em;
+}
+
 .cart-top {
   grid-area: cart-top;
   padding: 3em 0em;
@@ -110,17 +118,27 @@
 
 .cart-topleft {
   grid-area: cart-topleft;
-  margin: 0em 1em 1em 7.5em;
+  background-color: #f2f2f2;
+  padding-bottom: 1em;
+  margin-bottom: 1.25em;
 }
 
 .cart-topright {
   grid-area: cart-topright;
-  margin: 0em 7.5em 1em 0em;
+  background-color: #f2f2f2;
+  margin-bottom: 1.25em;
 }
 
 .cart-bottom {
   grid-area: cart-bottom;
-  margin: 0em 7.5em 3em 7.5em;
+  margin-top: -2em;
+}
+
+.white {
+  background-color: #f2f2f2;
+  padding: 1em;
+  margin-top: -1em;
+  margin-bottom: 1em;
 }
 
 .jacketdetail1,
@@ -193,23 +211,22 @@
 
 .main-section:nth-child(1) {
   background-image: url(/images/fabrizio-conti-xPFhK0MGsyw-unsplash.jpg);
-  background-position: center;
+
   grid-area: main-section-one;
 }
 
 .main-section:nth-child(2) {
-  background-image: url(/images/nina-luong-dy4QG5c5xWQ-unsplash.jpg);
-  background-position: center;
+  background-image: url(/images/wu-jianxiong-UniC8xhlzaE-unsplash.jpg);
   grid-area: main-section-two;
 }
 
 .main-section:nth-child(3) {
-  background-image: url(/images/adrien-olichon-Wx7yL_9q0A8-unsplash.jpg);
+  background-image: url(/images/alex-guillaume-KitOeE0vXzI-unsplash.jpg);
   grid-area: main-section-three;
 }
 
 .main-section:nth-child(4) {
-  background-image: url(/images/wu-jianxiong-UniC8xhlzaE-unsplash.jpg);
+  background-image: url(/images/todd-diemer-zglUlG8k47I-unsplash.jpg);
   grid-area: main-section-four;
 }
 
@@ -271,14 +288,8 @@
 }
 
 .article:nth-child(3) {
-  background-image: url(/images/mariah-krafft-g87PtqNlqOE-unsplash.jpg);
+  background-image: url(/images/mariah-krafft-g87PtqNlqOE-unsplash\ –\ Kopi\ –\ Kopi.jpg);
   grid-area: article-three;
-}
-
-.article-archive {
-  background-color: #f2f2f2;
-  border: solid black;
-  border-width: 1px;
 }
 
 .article {

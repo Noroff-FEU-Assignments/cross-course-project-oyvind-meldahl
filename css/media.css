@@ -6,7 +6,7 @@
 
   input,
   textarea {
-    width: 100%;
+    width: 95%;
     margin-top: 2px;
     padding: 10px;
     font-size: 16px;
@@ -72,9 +72,10 @@
   }
 
   .articleswrapper {
-    grid-template-areas: "article-one" "article-two" "article-three" "archive-one" "archive-two" "archive-three";
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "article-one" "article-two" "article-three";
+    grid-template-rows: 1fr 1fr 1fr;
     gap: 0.5em;
+    width: 90%;
   }
 
   .aboutwrapper {
@@ -156,7 +157,6 @@
     display: grid;
     grid-area: wrapper;
     grid-template-areas: "cart-top" "cart-topleft" "cart-topright" "cart-bottom";
-    grid-template-rows: auto auto auto auto auto auto;
     grid-template-columns: 1fr;
   }
 }
