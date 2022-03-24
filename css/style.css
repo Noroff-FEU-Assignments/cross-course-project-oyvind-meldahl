@@ -243,8 +243,7 @@ a:hover {
 
 .main-section,
 .article,
-.about-section,
-.explore-section {
+.about-section {
   background-position: left center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -252,17 +251,12 @@ a:hover {
   min-height: 20em;
 }
 
-.jackets-section,
 .jacketdetail,
 .about-team,
 .article-archive-one,
 .article-archive-two,
 .article-archive-three {
   padding: 0em 2em 0em 2em;
-}
-
-.jackets-section {
-  margin-bottom: 2em;
 }
 
 input[type="text"],

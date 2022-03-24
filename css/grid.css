@@ -43,27 +43,6 @@
   margin: 0em 1em;
 }
 
-.explorewrapper {
-  display: grid;
-  grid-area: wrapper;
-  grid-template-areas: "explore-section-top explore-section-top" "explore-section-one explore-section-two";
-  grid-template-rows: auto 1fr;
-  grid-template-columns: 1fr 1fr;
-  gap: 1em;
-  margin: 0em 1em;
-}
-
-.jacketswrapper {
-  display: grid;
-  grid-area: wrapper;
-  grid-template-areas: "jackets-section-top jackets-section-top jackets-section-top" "jackets-section-one jackets-section-two jackets-section-three" "jackets-section-four jackets-section-five jackets-section-six";
-  grid-template-rows: auto auto auto;
-  grid-template-columns: 1fr 1fr 1fr;
-  font-weight: bold;
-  margin: 0em 1em;
-  gap: 1em;
-}
-
 .jacketdetailwrapper {
   display: grid;
   grid-area: wrapper;
@@ -168,42 +147,6 @@
   border-width: 1px;
 }
 
-.jackets-section:nth-child(1) {
-  grid-area: jackets-section-top;
-}
-
-.jackets-section:nth-child(2) {
-  background-color: #f2f2f2;
-  grid-area: jackets-section-one;
-  text-align: center;
-}
-
-.jackets-section:nth-child(3) {
-  background-color: #f2f2f2;
-  grid-area: jackets-section-two;
-  text-align: center;
-}
-
-.jackets-section:nth-child(4) {
-  grid-area: jackets-section-three;
-  text-align: center;
-}
-
-.jackets-section:nth-child(5) {
-  grid-area: jackets-section-four;
-  text-align: center;
-}
-
-.jackets-section:nth-child(6) {
-  grid-area: jackets-section-five;
-  text-align: center;
-}
-
-.jackets-section:nth-child(7) {
-  grid-area: jackets-section-six;
-  text-align: center;
-}
-
 .main-section {
   border: solid black;
   border-width: 1px;
@@ -257,24 +200,6 @@
 
 .about-section-2 {
   padding-left: 1em;
-}
-
-.explore-section:nth-child(1) {
-  grid-area: explore-section-top;
-}
-
-.explore-section:nth-child(2) {
-  grid-area: explore-section-one;
-  background-image: url(/images/men3.jpg);
-  color: #f2f2f2;
-  background-position: 50% 25%;
-}
-
-.explore-section:nth-child(3) {
-  grid-area: explore-section-two;
-  background-image: url(/images/women.jpg);
-  color: #f2f2f2;
-  background-position: 50% 25%;
 }
 
 .article:nth-child(1) {
