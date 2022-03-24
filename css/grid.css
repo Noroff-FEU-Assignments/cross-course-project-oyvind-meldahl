@@ -192,7 +192,7 @@
 }
 
 .main-section:nth-child(1) {
-  background-image: url(/images/adrien-olichon-Wx7yL_9q0A8-unsplash.jpg);
+  background-image: url(/images/fabrizio-conti-xPFhK0MGsyw-unsplash.jpg);
   background-position: center;
   grid-area: main-section-one;
 }
@@ -204,7 +204,7 @@
 }
 
 .main-section:nth-child(3) {
-  background-image: url(/images/fabrizio-conti-xPFhK0MGsyw-unsplash.jpg);
+  background-image: url(/images/adrien-olichon-Wx7yL_9q0A8-unsplash.jpg);
   grid-area: main-section-three;
 }
 
