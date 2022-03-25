@@ -142,6 +142,7 @@
 .jacketdetail:nth-child(3) {
   grid-area: jacketdesc;
   padding-top: 2em;
+  padding-bottom: 2em;
   background-color: #f2f2f2;
   border: solid black;
   border-width: 1px;

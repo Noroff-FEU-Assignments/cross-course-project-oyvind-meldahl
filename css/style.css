@@ -381,6 +381,8 @@ textarea {
   margin-top: 2px;
   padding: 10px;
   font-size: 16px;
+  border: solid black;
+  border-width: 1px;
 }
 
 textarea {
