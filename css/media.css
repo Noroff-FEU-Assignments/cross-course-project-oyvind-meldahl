@@ -13,6 +13,10 @@
     display: none;
   }
 
+  .jacketdetail {
+    min-height: 475px;
+  }
+
   .ctabutton {
     font-size: 0.8rem;
   }
