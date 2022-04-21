@@ -19,6 +19,7 @@ async function getData() {
     createHtml(results);
   } catch (error) {
     console.log(error);
+    container_image.innerHTML = `<h1>An error has occured.</h1>`;
   }
 }
 

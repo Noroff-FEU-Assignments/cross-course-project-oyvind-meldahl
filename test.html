@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const url = "https://www.numitech.no/noroff/wp-json/wc/store/products/reviews?product=34";
+      const container = document.querySelector(".flexbilder");
+      const title = document.querySelector(".title_padding");
+      const navbar = document.querySelector(".navbar_js");
+      const queryString = document.location.search;
+      const params = new URLSearchParams(queryString);
+      const category = params.get("category");
+      let counter = 0;
+
+      async function getData() {
+        try {
+          const response = await fetch(url);
+          const results = await response.json();
+
+          console.log(results);
+        } catch (error) {
+          console.log(error);
+        }
+      }
+
+      getData();
+    </script>
+  </body>
+</html>

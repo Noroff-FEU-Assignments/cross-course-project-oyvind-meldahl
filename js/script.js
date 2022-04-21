@@ -4,6 +4,8 @@ const title = document.querySelector(".title_padding");
 const navbar = document.querySelector(".navbar_js");
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
+const navbar_men = document.querySelector(".active_nav_men");
+const navbar_women = document.querySelector(".active_nav_women");
 const category = params.get("category");
 let counter = 0;
 
@@ -21,7 +23,7 @@ async function getData() {
   } catch (error) {
     console.log(error);
 
-    container.innerHTML = `An error has occured.`;
+    container.innerHTML = `<h1>An error has occured.</h1>`;
   }
 }
 
@@ -30,27 +32,10 @@ getData();
 function createHtml(results) {
   if (category == 17) {
     title.innerHTML = "Men - All Jackets";
-    navbar.innerHTML = `<ul>
-    <li><a href="jackets.html?category=17" class="active">Men</a></li>
-    <li><a href="jackets.html?category=16">Women</a></li>
-    <li><a href="articles.html">Articles</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="contact.html">Contact</a></li>
-    <li><a href="cart.html">Cart</a></li>
-    <li class="socialmobile">
-      <a title="A link to Instagram" href="https://www.instagram.com/">
-        <i class="fab fa-instagram"></i>
-      </a>
-      <a title="A link to Twitter" href="https://www.twitter.com/">
-        <i class="fab fa-twitter"></i>
-      </a>
-      <a title="A link to Facebook" href="https://www.facebook.com/">
-        <i class="fab fa-facebook-f"></i>
-      </a>
-    </li>
-  </ul>`;
+    navbar_men.innerHTML = `<a href="jackets.html?category=17" class="active">Men</a>`;
   } else {
     title.innerHTML = "Women - All Jackets";
+    navbar_women.innerHTML = `<a href="jackets.html?category=16" class="active">Women</a>`;
   }
   container.innerHTML += `
     <div class="polaroid">
