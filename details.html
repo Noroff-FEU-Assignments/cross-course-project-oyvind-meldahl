@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Jacket nr.1 is the ultimate jacket for your everyday adventures!" />
+    <meta name="description" content="Jacket nr.2 is the best choice if you encounter rabid bears while hiking." />
     <meta name="keywords" content="jackets, outdoor, clothing, outerwear, rainjackets, nature" />
     <script src="https://kit.fontawesome.com/93d39a5d0d.js" crossorigin="anonymous"></script>
     <link href="css/style.css" rel="Stylesheet" />
@@ -13,23 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&family=Playfair+Display&display=swap" rel="stylesheet" />
-    <title>Rainydays Jackets - Jacket #1</title>
-    <!-- Hotjar Tracking Code for https://oymel.netlify.app/ -->
-    <script>
-      (function (h, o, t, j, a, r) {
-        h.hj =
-          h.hj ||
-          function () {
-            (h.hj.q = h.hj.q || []).push(arguments);
-          };
-        h._hjSettings = { hjid: 2854901, hjsv: 6 };
-        a = o.getElementsByTagName("head")[0];
-        r = o.createElement("script");
-        r.async = 1;
-        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
-        a.appendChild(r);
-      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
-    </script>
+    <title>Rainydays Jackets</title>
   </head>
   <body>
     <header>
@@ -48,8 +32,8 @@
         <input type="checkbox" id="hamburger-menu" />
         <nav>
           <ul>
-            <li><a href="jackets-male.html">Men</a></li>
-            <li><a href="jackets-female.html" class="active">Women</a></li>
+            <li class="active_nav_men"><a href="jackets.html?category=17">Men</a></li>
+            <li class="active_nav_women"><a href="jackets.html?category=16">Women</a></li>
             <li><a href="articles.html">Articles</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact</a></li>
@@ -71,30 +55,8 @@
     </header>
     <main class="center">
       <div class="jacketdetailwrapper">
-        <div class="jacketdetail1"><img src="images/w1.png" class="jacketimage" alt="Image of jacket #1" /></div>
-        <section class="jacketdetail">
-          <h1>Vinjeronden GTX</h1>
-          <p class="mobile_view_jacket"><img src="images/w1.png" class="jacketimage" alt="Image of jacket #1" /></p>
-          <p>
-            A tough jacket for you everyday adventures. Extra insulated, reinforced fabric on sleeves. A jacket can be your best friend, and this one is waiting for you to pick it
-            up and adventure out the door. No matter if the trip is down to the store or into the woods to check for rabid bears or marauding squirrels, it got you covered. The
-            ultra-strong hood protects you from falling pine-cones and nuts thrown by crazy squirrels and random hikers. The reinforced fabric on the sleeves protects you when you
-            find yourself in a knife-fight with a rabid bear.
-          </p>
-          <h2>$ 279</h2>
-
-          <p><b>Choose Size:</b></p>
-          <form action="cart.html">
-            <select class="jacketsizing" name="jackets">
-              <option value="xs">Extra Small</option>
-              <option value="s">Small</option>
-              <option value="m">Medium</option>
-              <option value="l">Large</option>
-              <option value="xl">Extra Large</option>
-            </select>
-            <p><input type="submit" value="Add to cart" /></p>
-          </form>
-        </section>
+        <div class="jacketdetail1">Loading</div>
+        <div class="jacketdetail"></div>
         <section class="jacketdetail">
           <h3>Reviews</h3>
           <p class="bold">On 15. march 2019, Ross Bob said:</p>
@@ -121,17 +83,10 @@
               that paint. Isn't that fantastic? You can just push a little tree out of your brush like that. Every highlight needs it's own personal shadow.
             </q>
           </p>
-
-          <p class="bold">On 29. february 2022, Bobby Rossy said:</p>
-          <p>
-            <q>
-              This is truly an almighty mountain. Just take out whatever you don't want. It'll change your entire perspective. There we go. Let's just drop a little Evergreen right
-              here. With practice comes confidence. Let's get wild today.
-            </q>
-          </p>
         </section>
       </div>
     </main>
     <footer class="centerflex">&copy; Rainydays Jackets 2021</footer>
+    <script src="js/details.js"></script>
   </body>
 </html>

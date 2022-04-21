@@ -131,6 +131,7 @@
   background-color: #f2f2f2;
   border: solid black;
   border-width: 1px;
+  min-height: 475px;
 }
 .jacketdetail:nth-child(2) {
   grid-area: jacketdetailbuy;

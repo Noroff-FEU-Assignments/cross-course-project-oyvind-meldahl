@@ -209,7 +209,8 @@ a:hover {
   text-align: center;
 }
 
-.jacketimage {
+.jacketimage,
+.jacketimage_mobile {
   max-width: 100%;
   max-height: 450px;
   min-height: 450px;
