@@ -14,7 +14,6 @@ async function getData() {
     const response = await fetch(url + category);
     const results = await response.json();
 
-    console.log(results);
     container.innerHTML = "";
 
     for (let i = 0; i < results.length; i++) {
@@ -39,7 +38,7 @@ function createHtml(results) {
   }
   container.innerHTML += `
     <div class="polaroid">
-          <a href="details.html?id=${results.id}&category=${category}"> <img src="${results.images[0].src}" alt="5 Terre" class="jacket-picture">
+          <a href="details.html?id=${results.id}&category=${category}"> <img src="${results.images[0].src}" alt="Picture of the ${results.name} jacket." class="jacket-picture">
           <div class="testcontainer">
             <p>${results.name}</p>
             <p>NOK ${results.prices.regular_price}</p>
@@ -48,7 +47,7 @@ function createHtml(results) {
         </div>
         `;
   counter += 1;
-  if (counter === 3) {
+  if (counter % 3 === 0) {
     container.innerHTML += `
       <div class="break-flex"></div>
       `;
